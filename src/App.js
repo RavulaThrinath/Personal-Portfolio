@@ -18,7 +18,7 @@ function App() {
   };
   return (
     <Router>
-      <div className="App">
+      <div >
         <TsParticles />
         <Cursor />
         <RHeader isOpen={isOpen} toggle={toggle} />
