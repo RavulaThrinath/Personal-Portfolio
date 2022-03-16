@@ -1,0 +1,12 @@
+.custom-cursor {
+  z-index: 1000;
+  border-radius: 100px;
+  width: 5px;
+  height: 5px;
+  background-color: #00e5b0;
+  /* border: 10px solid #ffffff; */
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+}

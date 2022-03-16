@@ -1,0 +1,72 @@
+.home {
+  margin-left: 8%;
+  height: 100vh;
+  position: relative;
+  
+}
+.hometext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hometext h1 {
+  color: #fff;
+  font-size: 80px;
+  font-family: "Outfit", serif;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+/* From cssbuttons.io by @Zena4L */
+.btn:link,
+.btn:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #00e5b0;
+  padding: 12px 36px;
+  border: 1px solid;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  margin-top: 30px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, 0.5);
+}
+
+.btn:active {
+  transform: translateY(-3px);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn:hover::after {
+  background-color: #00e5b0;
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
