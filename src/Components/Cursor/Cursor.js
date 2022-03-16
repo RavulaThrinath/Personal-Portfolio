@@ -11,5 +11,7 @@ export default function Cursor() {
       cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     });
   }, []);
-  return <div className="custom-cursor" ref={cursorRef}></div>;
+  return (
+    <div className="custom-cursor" ref={cursorRef}></div>
+  );
 }
