@@ -8,7 +8,7 @@ import Header from "./Components/Navbar/Header/Header";
 import RHeader from "./Components/Navbar/ResponsiveHeader/RHeader";
 import React from "react";
 import TsParticles from "./Components/Particles/TsParticles";
-import Cursor from "./Components/Cursor/Cursor";
+// import Cursor from "./Components/Cursor/Cursor";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ function App() {
     <Router>
       <div>
         <TsParticles />
-        <Cursor />
+        {/*<Cursor />*/}
         <RHeader isOpen={isOpen} toggle={toggle} />
         <Header toggle={toggle} />
         <Routes>

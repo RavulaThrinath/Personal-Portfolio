@@ -18,15 +18,15 @@ const Header = ({ toggle }) => {
           <BsList />
         </div>
         <div className="navbar-links">
-          <NavLink className="links" to="/" data-tip data-for="hometip">
+          <NavLink className="links" to="/" data-tip data-for="hometip" id="navlinks">
             <AiFillHome />
           </NavLink>
           <ReactTooltip
             id="hometip"
             place="right"
             effect="solid"
-            textColor="black"
-            backgroundColor="#00e5b0"
+            textColor="#fff"
+            backgroundColor="#27496d"
           >
             Home
           </ReactTooltip>
@@ -35,6 +35,7 @@ const Header = ({ toggle }) => {
             to="/about"
             data-tip
             data-for="abouttip"
+            id="navlinks"
           >
             <FaUserAlt />
           </NavLink>
@@ -42,8 +43,8 @@ const Header = ({ toggle }) => {
             id="abouttip"
             place="right"
             effect="solid"
-            textColor="black"
-            backgroundColor="#00e5b0"
+            textColor="#fff"
+            backgroundColor="#27496d"
           >
             About
           </ReactTooltip>
@@ -52,6 +53,7 @@ const Header = ({ toggle }) => {
             to="/works"
             data-tip
             data-for="worktip"
+            id="navlinks"
           >
             <BsTrophyFill />
           </NavLink>
@@ -59,8 +61,8 @@ const Header = ({ toggle }) => {
             id="worktip"
             place="right"
             effect="solid"
-            textColor="black"
-            backgroundColor="#00e5b0"
+            textColor="#fff"
+            backgroundColor="#27496d"
           >
             Works
           </ReactTooltip>
@@ -69,6 +71,7 @@ const Header = ({ toggle }) => {
             to="/blogs"
             data-tip
             data-for="blogtip"
+            id="navlinks"
           >
             <RiArticleFill />
           </NavLink>
@@ -76,8 +79,8 @@ const Header = ({ toggle }) => {
             id="blogtip"
             place="right"
             effect="solid"
-            textColor="black"
-            backgroundColor="#00e5b0"
+            textColor="#fff"
+            backgroundColor="#27496d"
           >
             Blogs
           </ReactTooltip>
@@ -86,6 +89,7 @@ const Header = ({ toggle }) => {
             to="/contact"
             data-tip
             data-for="contacttip"
+            id="navlinks"
           >
             <GrMail />
           </NavLink>
@@ -93,8 +97,8 @@ const Header = ({ toggle }) => {
             id="contacttip"
             place="right"
             effect="solid"
-            textColor="black"
-            backgroundColor="#00e5b0"
+            textColor="#fff"
+            backgroundColor="#27496d"
           >
             Contact
           </ReactTooltip>

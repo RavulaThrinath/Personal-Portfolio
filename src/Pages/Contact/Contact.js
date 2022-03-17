@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Contact.css";
 // import { db } from "../../firebase";
 // import { collection, addDoc } from "firebase/firestore";
 // import Swal from "sweetalert2";
+import Bounce from "react-reveal/Bounce";
 
 const Contact = () => {
   // const [firstname, setFirstname] = useState("");
@@ -40,10 +41,14 @@ const Contact = () => {
     <div>
       <div className="container">
         <div className="HContact-heading">
-          <div className="HContact-title">Contact Us</div>
-          <div className="HContact-subtitle">
-            {`Let's talk about how we can bring \n your ideas to life together`}
-          </div>
+          <Bounce top delay={200}>
+            <div className="HContact-title">Contact Me</div>
+          </Bounce>
+          <Bounce top delay={100}>
+            <div className="HContact-subtitle">
+              {`Let's talk about how we can bring \n your ideas to life together`}
+            </div>
+          </Bounce>
         </div>
         <div className="content">
           <form>
@@ -93,7 +98,7 @@ const Contact = () => {
                 <textarea
                   type="text"
                   placeholder="Tell us about your project"
-                  rows="6"
+                  rows="4"
                   cols="50"
                   required
                   // value={aboutproject}
