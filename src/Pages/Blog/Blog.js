@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import client from "../../client";
+import "./Blog.css";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -26,13 +27,16 @@ const Blog = () => {
       .catch(console.error);
   }, []);
   return (
-    <div>
+    <div className="blog-list">
       {posts.map((post) => (
-        <article key={post.slug.current}>
-          <img src={post.mainImage.asset.url} alt={post.title} width="100px" />
+        <Link
+          to={`/blogs/${post.slug.current}`}
+          key={post.slug.current}
+          className="blog-container"
+        >
+          <img src={post.mainImage.asset.url} alt={post.title} />
           <h2>{post.title}</h2>
-          <Link to={`/blogs/${post.slug.current}`}>Read more</Link>
-        </article>
+        </Link>
       ))}
     </div>
   );

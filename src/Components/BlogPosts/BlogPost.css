@@ -1,0 +1,54 @@
+.blogpost {
+  max-width: 60%;
+  margin: auto;
+}
+.blog_title {
+  color: #fff;
+  margin-top: 50px;
+  font-family: "Jost", sans-serif;
+  font-size: 40px;
+}
+.blog_text h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.blog_text h3 {
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 40px 0 5px 0;
+  font-weight: 500;
+}
+.blog_text h4 {
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0px 0 5px 0;
+  font-weight: 500;
+}
+.blog_text p {
+  color: #b8b8b8;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.1px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+.blog_text a {
+  text-decoration: none;
+  color: #b8b8b8;
+}
+
+.blog_text img {
+  width: 500px;
+}
+.main-img img {
+  display: block;
+  width: 800px;
+  height: auto;
+  margin: 10px auto 30px auto;
+}
