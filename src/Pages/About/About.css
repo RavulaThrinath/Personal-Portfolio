@@ -1,0 +1,11 @@
+.fake-title {
+  position: fixed;
+  top: -70px;
+  right: 10px;
+  font-size: 250px;
+  color: rgba(131, 131, 131, 0.01);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -10px;
+  font-weight: 700;
+  z-index: -1;
+}

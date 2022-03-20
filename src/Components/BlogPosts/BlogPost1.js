@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import client from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import "./BlogPost.css";
@@ -29,7 +29,7 @@ const BlogPost1 = () => {
   return (
     <div>
       {isLoading ? (
-        <h1>Loading</h1>
+        <div class="loader"></div>
       ) : (
         <section className="blogpost">
           <div className="main-img">
@@ -49,9 +49,6 @@ const BlogPost1 = () => {
               className="blog_text"
             />
           </div>
-          <button>
-            <Link to="/blogs">Read more articles</Link>
-          </button>
         </section>
       )}
     </div>

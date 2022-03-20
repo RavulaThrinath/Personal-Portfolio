@@ -40,6 +40,7 @@ const Contact = () => {
   // };
   return (
     <div>
+      <h1 className="fake-title">Contact</h1>
       <div className="container">
         <div className="HContact-heading">
           <Bounce top>
