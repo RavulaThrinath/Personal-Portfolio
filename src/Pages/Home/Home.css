@@ -31,9 +31,9 @@
 
 .subtext {
   display: grid;
-  margin: 60px 0 20px 15px;
+  margin: 50px 0 20px 15px;
   font-family: "Poppins", sans-serif;
-  color: #646464;
+  color: #8d8d8d;
   font-weight: 500;
 }
 .subtext-1 {
@@ -50,6 +50,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-left: 15px;
   margin-top: 20px;
 }
 /* CSS */
@@ -57,7 +59,6 @@
   appearance: none;
   background-color: #27496d;
   border: 2px solid #27496d;
-  border-radius: 15px;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -69,17 +70,15 @@
   font-weight: 600;
   line-height: normal;
   outline: none;
-  max-width: 170px;
-  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
   will-change: transform;
-  margin: 0 20px;
+  padding: 15px 50px;
+  margin-right: 10px;
 }
 
 .button-27:disabled {
@@ -97,12 +96,12 @@
 }
 
 .button-28 {
-  max-width: 170px;
-  margin: 0 20px;
+  padding: 15px 50px;
+  margin-left: 10px;
+  /* width: 50%; */
   appearance: none;
   background-color: transparent;
   border: 2px solid #27496d;
-  border-radius: 15px;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -112,14 +111,13 @@
   font-size: 15px;
   font-weight: 600;
   outline: none;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
   will-change: transform;
 }
 
@@ -140,7 +138,7 @@
 }
 
 .social-icons {
-  position: absolute;
+  position: fixed;
   top: 60%;
   right: 1%;
   transform: translate(-50%, -50%);

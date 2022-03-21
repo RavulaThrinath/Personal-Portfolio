@@ -40,7 +40,9 @@ const Contact = () => {
   // };
   return (
     <div>
-      <h1 className="fake-title">Contact</h1>
+      <div className="fake-title-parent">
+        <h1 className="fake-title">Contact</h1>
+      </div>
       <div className="container">
         <div className="HContact-heading">
           <Bounce top>
@@ -60,7 +62,7 @@ const Contact = () => {
                   <span className="details">First name</span>
                   <input
                     type="text"
-                    placeholder="e.g. John"
+                    placeholder="Enter your first name"
                     required
                     // value={firstname}
                     // onChange={(e) => setFirstname(e.target.value)}
@@ -72,7 +74,7 @@ const Contact = () => {
                   <span className="details">Last name</span>
                   <input
                     type="text"
-                    placeholder="e.g. Smith"
+                    placeholder="Enter your first name"
                     required
                     // value={lastname}
                     // onChange={(e) => setLastname(e.target.value)}
@@ -84,7 +86,7 @@ const Contact = () => {
                   <span className="details">Email</span>
                   <input
                     type="text"
-                    placeholder="e.g. johnsmith@gmail.com"
+                    placeholder="Enter your email"
                     required
                     // value={mail}
                     // onChange={(e) => setMail(e.target.value)}
@@ -96,7 +98,7 @@ const Contact = () => {
                   <span className="details">Phone Number</span>
                   <input
                     type="text"
-                    placeholder="e.g. +91-91003538XX"
+                    placeholder="Enter your phone numbers"
                     required
                     // value={phonenumber}
                     // onChange={(e) => setPhonenumber(e.target.value)}
@@ -108,7 +110,7 @@ const Contact = () => {
                   <span className="details">Short brief</span>
                   <textarea
                     type="text"
-                    placeholder="Tell us about your project"
+                    placeholder="Tell me about your project"
                     rows="4"
                     cols="50"
                     required

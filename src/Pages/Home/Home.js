@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import Bounce from "react-reveal/Bounce";
 import Resume from "../../Assets/Thrinath Ravula (1).pdf";
-// import Contact from "../Contact/Contact"
+import Contact from "../Contact/Contact";
+import About from "../About/About";
 // import { FaFacebookF } from "react-icons/fa";
 import { RiFacebookFill, RiInstagramFill, RiTwitterFill } from "react-icons/ri";
 
@@ -54,7 +55,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/*<Contact/>*/}
+      <About />
+      <Contact />
     </>
   );
 };
