@@ -1,0 +1,99 @@
+.Skills-container {
+  max-width: 65%;
+  height: auto;
+  margin: auto;
+}
+
+.hservices-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+.list-container {
+  position: relative;
+  margin: 20px 10px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border: 0.5px solid #ffffff1e;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-container:hover {
+  border-color: #27496d;
+  background: none;
+}
+.skill-icon {
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  border-radius: 50%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.list-title {
+  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 40px;
+  white-space: pre-line;
+  line-height: 27px;
+  color: #ffffff;
+}
+.list-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  padding: 0 10px;
+  font-family: "Commissioner", sans-serif;
+}
+
+@media screen and (max-width: 1280px) {
+  .list-text {
+    font-size: 17px;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hservices-list {
+    flex-direction: column;
+  }
+  .list-container {
+    width: 95%;
+    margin: 40px 0;
+  }
+  .list-container:first-child {
+    margin: 0px 0 40px 0;
+  }
+  .list-title {
+    white-space: normal;
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+  .list-text {
+    font-size: 16px;
+    margin: 10px;
+  }
+}

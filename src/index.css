@@ -17,3 +17,7 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-opacity: #27496d44;
+  --primary-color: #27496d;
+}

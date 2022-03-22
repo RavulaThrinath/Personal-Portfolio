@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import AboutImage from "../../Assets/About.svg";
 import { Link } from "react-router-dom";
+import Bounce from "react-reveal/Bounce";
+import Skills from "./Skills/Skills"
 
 const About = () => {
   return (
@@ -10,30 +12,41 @@ const About = () => {
         <h1 className="fake-title">About</h1>
       </div>
       <div className="about-container">
-        <div className="about-image">
-          <img src={AboutImage} alt="" />
-        </div>
-        <div className="About-main-text">
-          <p>
-            Hi, My name is <span>Thrinath Ravula,</span>
-          </p>
-          <p>
-            A Web <span>designer</span> and <span>Developer</span>
-          </p>
-          <h4>
-            Specializing in refined digital web experiences with a focus on
-            animated, responsive, and interactive content.
-          </h4>
-          <h4>
-            Delivering highly executed front-end user experiences by paying
-            close attention to the nuances of design, optimization, and
-            performance
-          </h4>
-          <div className="morebtn">
-            <MoreButton btntext="Let’s make something special" />
+        <Bounce top>
+          <div className="about-image">
+            <img src={AboutImage} alt="" />
           </div>
+        </Bounce>
+        <div className="About-main-text">
+          <Bounce bottom>
+            <p>
+              Hi, My name is <span>Thrinath Ravula,</span>
+            </p>
+            <p>
+              A Web <span>designer</span> and <span>Developer</span>
+            </p>
+          </Bounce>
+          <Bounce bottom delay={10}>
+            <h4 className="about-sub-text">
+              Specializing in refined digital web experiences with a focus on
+              animated, responsive, and interactive content.
+            </h4>
+          </Bounce>
+          <Bounce bottom delay={20}>
+            <h4 className="about-sub-text">
+              Delivering highly executed front-end user experiences by paying
+              close attention to the nuances of design, optimization, and
+              performance
+            </h4>
+          </Bounce>
+          <Bounce bottom delay={30}>
+            <div className="morebtn">
+              <MoreButton btntext="Let’s make something special" />
+            </div>
+          </Bounce>
         </div>
       </div>
+      <Skills />
     </div>
   );
 };
