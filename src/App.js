@@ -10,7 +10,7 @@ import Blog from "./Pages/Blog/Blog";
 import React from "react";
 import TsParticles from "./Components/Particles/TsParticles";
 import BlogPost1 from "./Components/BlogPosts/BlogPost1";
-import ScrollTop from "./Components/ScrollTop/ScrollTop";
+// import ScrollTop from "./Components/ScrollTop/ScrollTop";
 // import Cursor from "./Components/Cursor/Cursor";
 
 function App() {
@@ -23,8 +23,9 @@ function App() {
     <Router>
       <div>
         <TsParticles />
-        <ScrollTop />
+
         {/*<Cursor />*/}
+        {/* <ScrollTop />*/}
         <RHeader isOpen={isOpen} toggle={toggle} />
         <Header toggle={toggle} />
         <Routes>
