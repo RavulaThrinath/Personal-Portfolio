@@ -14,8 +14,11 @@ const Header = ({ toggle }) => {
   return (
     <Navbar className="navbar">
       <div className="navbar-content">
-        <div className="hamburger" onClick={toggle}>
-          <BsList />
+        <div className="res-nav">
+          <h1>3 Nath</h1>
+          <div className="hamburger" onClick={toggle}>
+            <BsList />
+          </div>
         </div>
         <div className="navbar-links">
           <NavLink

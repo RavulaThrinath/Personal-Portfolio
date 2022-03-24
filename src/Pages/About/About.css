@@ -18,12 +18,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 62%;
+  max-width: 70%;
   height: 100vh;
   margin: auto;
 }
 .about-image {
-  width: 30%;
+  width: 27%;
 }
 .about-container img {
   display: block;
@@ -32,6 +32,8 @@
 }
 .About-main-text {
   width: 85%;
+  margin: 50px 0 0 0;
+
 }
 
 .About-main-text p {
@@ -52,7 +54,7 @@
 }
 .about-sub-text {
   color: #ffffff;
-  opacity: 0.8 !important;
+  opacity: 0.6 !important;
   font-family: "Commissioner", sans-serif;
   font-weight: normal !important;
   margin-top: 30px;
@@ -72,14 +74,14 @@
 .cta span {
   font-family: "Commissioner", sans-serif;
   padding-bottom: 7px;
-  font-size: 17px;
+  font-size: 19px;
   padding-right: 15px;
-  color: #adadad;
+  color: #ffffff;
+  opacity: 0.5;
   font-weight: normal;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   transition: 0.2s ease-in-out;
 }
-
 
 .cta svg {
   transform: translateX(-8px);

@@ -14,7 +14,7 @@
   align-items: center;
   text-align: center;
 }
-.hamburger {
+.res-nav {
   display: none;
 }
 
@@ -110,4 +110,46 @@
 
 .__react_component_tooltip {
   padding: 6px 18px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    z-index: 100;
+  }
+  .navbar-content {
+    height: 60px;
+    background: #27496d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .res-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .hamburger {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
 }

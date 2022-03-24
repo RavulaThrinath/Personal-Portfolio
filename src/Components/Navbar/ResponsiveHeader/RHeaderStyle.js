@@ -8,10 +8,10 @@ export const SidebarContainer = styled.aside`
   width: 100%;
   height: 100%;
   margin: auto;
-  background: #323445;
+  background: #27496d;
   display: grid;
   align-items: center;
-  border: 10px solid #242533;
+  border: 10px solid #1d1d1d;
   top: 0;
   left: 0;
   transition: 0.1s ease-in-out;

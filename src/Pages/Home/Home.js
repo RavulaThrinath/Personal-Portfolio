@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import Bounce from "react-reveal/Bounce";
 import Resume from "../../Assets/Thrinath Ravula (1).pdf";
-import Contact from "../Contact/Contact";
-import About from "../About/About";
+// import Contact from "../Contact/Contact";
+// import About from "../About/About";
 // import { FaFacebookF } from "react-icons/fa";
 import { RiFacebookFill, RiInstagramFill, RiTwitterFill } from "react-icons/ri";
 
@@ -30,7 +30,6 @@ const Home = () => {
             </Bounce>
           </div>
           <div className="btn-links">
-            {" "}
             <Bounce top delay={100}>
               <Link to="/contact" className="button-27">
                 Contact Me
@@ -55,8 +54,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <About />
-      <Contact />
+      {/*  <About />
+      <Contact />*/}
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Skills.css";
-import { FaReact } from "react-icons/fa";
+// import { FaReact } from "react-icons/fa";
 import { hServicesList } from "../../../Data";
 
 const Skills = () => {
@@ -14,10 +14,13 @@ const Skills = () => {
         {hServicesList.map((list) => (
           <div key={list.id} className="list-container">
             <div className="skill-icon">
-              <FaReact />
+              <img
+                src={require(`../../../Assets/${list.Imageid}.png`)}
+                alt=""
+              />{" "}
             </div>
             <h1 className="list-title">{list.title}</h1>
-            <p className="list-text">{list.text}</p>
+            <p className="listText">{list.text}</p>
           </div>
         ))}
       </div>
