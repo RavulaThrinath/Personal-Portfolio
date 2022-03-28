@@ -1,9 +1,10 @@
 import React from "react";
 import "./Contact.css";
+import { pageVariants, pageTransition, pageStyle } from "../../Data";
+import { motion } from "framer-motion";
+
 // import { db } from "../../firebase";
 // import { collection, addDoc } from "firebase/firestore";
-// import Swal from "sweetalert2";
-import Bounce from "react-reveal/Bounce";
 // import LightSpeed from "react-reveal/LightSpeed";
 
 const Contact = () => {
@@ -39,86 +40,79 @@ const Contact = () => {
   //   setAboutproject("");
   // };
   return (
-    <div>
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="fake-title-parent">
         <h1 className="fake-title">Contact</h1>
       </div>
       <div className="container">
         <div className="HContact-heading">
-          <Bounce top>
-            <div className="HContact-title">Contact Me</div>
-          </Bounce>
-          <Bounce top delay={40}>
-            <div className="HContact-subtitle">
-              {`Let's talk about how we can bring \n your ideas to life together`}
-            </div>
-          </Bounce>
+          <div className="HContact-title">Contact Me</div>
+          <div className="HContact-subtitle">
+            {`Let's talk about how we can bring \n your ideas to life together`}
+          </div>
         </div>
         <div className="content">
           <form>
             <div className="user-details">
-              <Bounce left>
-                <div className="input-box">
-                  <span className="details">First name</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your first name"
-                    required
-                    // value={firstname}
-                    // onChange={(e) => setFirstname(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={10}>
-                <div className="input-box">
-                  <span className="details">Last name</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your first name"
-                    required
-                    // value={lastname}
-                    // onChange={(e) => setLastname(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={40}>
-                <div className="input-box">
-                  <span className="details">Email</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    required
-                    // value={mail}
-                    // onChange={(e) => setMail(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={70}>
-                <div className="input-box">
-                  <span className="details">Phone Number</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your phone numbers"
-                    required
-                    // value={phonenumber}
-                    // onChange={(e) => setPhonenumber(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={100}>
-                <div className="textarea-box">
-                  <span className="details">Short brief</span>
-                  <textarea
-                    type="text"
-                    placeholder="Tell me about your project"
-                    rows="4"
-                    cols="50"
-                    required
-                    // value={aboutproject}
-                    // onChange={(e) => setAboutproject(e.target.value)}
-                  />
-                </div>
-              </Bounce>
+              <div className="input-box">
+                <span className="details">First name</span>
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  required
+                  // value={firstname}
+                  // onChange={(e) => setFirstname(e.target.value)}
+                />
+              </div>
+              <div className="input-box">
+                <span className="details">Last name</span>
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  required
+                  // value={lastname}
+                  // onChange={(e) => setLastname(e.target.value)}
+                />
+              </div>
+              <div className="input-box">
+                <span className="details">Email</span>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  required
+                  // value={mail}
+                  // onChange={(e) => setMail(e.target.value)}
+                />
+              </div>
+              <div className="input-box">
+                <span className="details">Phone Number</span>
+                <input
+                  type="text"
+                  placeholder="Enter your phone numbers"
+                  required
+                  // value={phonenumber}
+                  // onChange={(e) => setPhonenumber(e.target.value)}
+                />
+              </div>
+              <div className="textarea-box">
+                <span className="details">Short brief</span>
+                <textarea
+                  type="text"
+                  placeholder="Tell me about your project"
+                  rows="4"
+                  cols="50"
+                  required
+                  // value={aboutproject}
+                  // onChange={(e) => setAboutproject(e.target.value)}
+                />
+              </div>
             </div>
             <button>
               <span className="button_top"> Send Message </span>
@@ -126,7 +120,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

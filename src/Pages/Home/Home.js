@@ -1,46 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Bounce from "react-reveal/Bounce";
-import Resume from "../../Assets/Thrinath Ravula (1).pdf";
+// import Bounce from "react-reveal/Bounce";
+import { motion } from "framer-motion";
+import {pageVariants, pageTransition, pageStyle} from "../../Data"
+
 // import Contact from "../Contact/Contact";
 // import About from "../About/About";
 // import { FaFacebookF } from "react-icons/fa";
-import { RiFacebookFill, RiInstagramFill, RiTwitterFill } from "react-icons/ri";
+// import { RiFacebookFill, RiInstagramFill, RiTwitterFill } from "react-icons/ri";
+
 
 const Home = () => {
+  const [arrow, setArrow] = useState(true);
+  const arrowVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 50) {
+      setArrow(false);
+    } else if (scrolled <= 500) {
+      setArrow(true);
+    }
+  };
+  window.addEventListener("scroll", arrowVisible);
   return (
     <>
-      <div className="home">
+      <motion.div
+        className="home"
+        style={pageStyle}
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
         <div className="hometext">
-          <Bounce top>
-            <div className="intro">Hi there, I'm</div>
-          </Bounce>
-          <Bounce top delay={40}>
-            <div className="main-title">3 Nath </div>
-          </Bounce>
+          <div className="intro">Hi there, I'm</div>
+
+          <div className="main-title">3 Nath </div>
+
           <div className="subtext">
-            <Bounce top delay={60}>
-              <p className="subtext-1">Brings ideas to life with code</p>
-            </Bounce>
-            <Bounce top delay={80}>
-              <p className="subtext-2">
-                Web developer. UI/UX Designer. Content Creator.
-              </p>
-            </Bounce>
+            <p className="subtext-1">Brings ideas to life with code</p>
+
+            <p className="subtext-2">
+              Web developer. UI/UX Designer. Content Creator.
+            </p>
           </div>
           <div className="btn-links">
-            <Bounce top delay={100}>
-              <Link to="/contact" className="button-27">
-                Contact Me
-              </Link>
-              <a href={Resume} className="button-28" download>
-                Download CV
-              </a>
-            </Bounce>
+            <Link to="/contact" className="button-27">
+              Contact Me
+            </Link>
           </div>
         </div>
-        <div className="social-icons">
+        {/*<div className="social-icons">
           <div className="social-icons-border">
             <a href="./">
               <RiFacebookFill />
@@ -52,8 +63,13 @@ const Home = () => {
               <RiTwitterFill />
             </a>
           </div>
+        </div>*/}
+        <div className="box" style={{ display: arrow ? "inline" : "none" }}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </div>
+      </motion.div>
       {/*  <About />
       <Contact />*/}
     </>
