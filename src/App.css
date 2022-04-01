@@ -24,11 +24,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(./Assets/MISTRAL.woff);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(./Assets/SegoeScript.woff);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+:root {
+  --Main-color: #27496d;
 }
 /* html,
 body, * {

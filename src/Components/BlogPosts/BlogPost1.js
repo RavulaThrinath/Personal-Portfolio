@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import client from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import "./BlogPost.css";
+import Preloader from "../Preloader/Preloder";
 
 const BlogPost1 = () => {
   const [singlePost, setSinglePost] = useState([]);
@@ -29,7 +30,7 @@ const BlogPost1 = () => {
   return (
     <div>
       {isLoading ? (
-        <div class="loader"></div>
+        <Preloader />
       ) : (
         <section className="blogpost">
           <div className="main-img">

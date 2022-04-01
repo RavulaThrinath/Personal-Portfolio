@@ -68,12 +68,12 @@ export const SidebarLink = styled(LinkS)`
   justify-content: center;
   text-align: center;
   font-size: 1.3rem;
-  font-weight:800 ;
+  font-weight: 800;
   text-decoration: none;
   list-style: none;
   transition: all.2s ease-in-out;
   color: #000000;
-  font-family: "Commissioner" ;
+  font-family: "Commissioner";
   cursor: pointer;
 
   &:hover {

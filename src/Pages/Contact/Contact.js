@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import { pageVariants, pageTransition, pageStyle } from "../../Data";
-import { motion } from "framer-motion";
+// import { pageVariants, pageTransition, pageStyle } from "../../Data";
+// import { motion } from "framer-motion";
 
 // import { db } from "../../firebase";
 // import { collection, addDoc } from "firebase/firestore";
@@ -40,13 +40,7 @@ const Contact = () => {
   //   setAboutproject("");
   // };
   return (
-    <motion.div
-      style={pageStyle}
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
+    <div
     >
       <div className="fake-title-parent">
         <h1 className="fake-title">Contact</h1>
@@ -120,7 +114,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

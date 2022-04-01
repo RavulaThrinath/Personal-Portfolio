@@ -9,14 +9,14 @@
 .blog-container {
   width: 100%;
   height: auto;
-  background-color: #1d1d1d;
-  box-shadow: 0px 0px 6px #00000060;
+  background-color: #2b2b2b;
+  /* box-shadow: 0px 0px 6px #00000060; */
   border-radius: 5px;
   transition: 0.1s ease-in-out;
   text-decoration: none;
 }
 .blog-container:hover {
-  box-shadow: 0px 0px 10px #00000085;
+  /* box-shadow: 0px 0px 10px #00000085; */
   transform: translateY(-2px);
 }
 

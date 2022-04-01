@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 // import Bounce from "react-reveal/Bounce";
-import { motion } from "framer-motion";
-import {pageVariants, pageTransition, pageStyle} from "../../Data"
+// import { motion } from "framer-motion";
+// import {pageVariants, pageTransition, pageStyle} from "../../Data"
 
 // import Contact from "../Contact/Contact";
 // import About from "../About/About";
@@ -24,14 +24,7 @@ const Home = () => {
   window.addEventListener("scroll", arrowVisible);
   return (
     <>
-      <motion.div
-        className="home"
-        style={pageStyle}
-        initial="initial"
-        animate="in"
-        exit="out"
-        variants={pageVariants}
-        transition={pageTransition}
+      <div
       >
         <div className="hometext">
           <div className="intro">Hi there, I'm</div>
@@ -69,7 +62,7 @@ const Home = () => {
           <span></span>
           <span></span>
         </div>
-      </motion.div>
+      </div>
       {/*  <About />
       <Contact />*/}
     </>
