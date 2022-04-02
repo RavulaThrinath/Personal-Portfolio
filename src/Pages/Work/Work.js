@@ -21,7 +21,7 @@ const Work = () => {
         </Bounce>
         {projectList.map((project) => (
           <div className="project-container" key={project.id}>
-            <Bounce top delay={100}>
+            <Bounce left delay={100}>
               <img src={project.imageId} alt="" />
             </Bounce>
             <div className="project-details">
