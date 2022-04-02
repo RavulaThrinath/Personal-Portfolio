@@ -1,9 +1,7 @@
 .container {
-  max-width: 60%;
-  margin: auto;
-  /* height: 100vh; */
+  max-width: 90%;
+  margin: 90px auto 0;
   width: 100%;
-  padding: 25px 0;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -40,18 +38,20 @@
   font-weight: 300;
   line-height: 22px;
   /* white-space: pre-line; */
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 .content form .user-details {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
 form .user-details .input-box {
   margin-bottom: 22px;
-  width: calc(100% / 2 - 20px);
+  width: 100%;
+  /* width: calc(100% / 2 - 20px); */
 }
 .textarea-box {
   width: 100%;
@@ -111,7 +111,7 @@ textarea {
   --button_radius: 0.75em;
   --button_color: #27496d;
   --button_outline_color: #2c3a49;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 10px 0 30px 0;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import client from "../../client";
 // import Preloder from "../../Components/Preloader/Preloder";
@@ -30,20 +30,24 @@ const Blog = () => {
   }, []);
   return (
     <>
-      <Suspense fallback={<h1>Loading...</h1>}>
-        <div className="blog-list">
-          {posts.map((post) => (
-            <Link
-              to={`/blogs/${post.slug.current}`}
-              key={post.slug.current}
-              className="blog-container"
-            >
-              <img src={post.mainImage.asset.url} alt={post.title} />
-              <h2>{post.title}</h2>
-            </Link>
-          ))}
+      <div className="blog-list">
+        <div className="HContact-heading">
+          <div className="HContact-title">Blogs</div>
+          <div className="HContact-subtitle">
+            {`Let's talk about how we can bring \n your ideas to life together`}
+          </div>
         </div>
-      </Suspense>
+        {posts.map((post) => (
+          <Link
+            to={`/blogs/${post.slug.current}`}
+            key={post.slug.current}
+            className="blog-container"
+          >
+            <img src={post.mainImage.asset.url} alt={post.title} />
+            <h2>{post.title}</h2>
+          </Link>
+        ))}
+      </div>
     </>
   );
 };
