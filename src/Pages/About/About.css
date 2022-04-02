@@ -51,12 +51,13 @@
 }
 .about-sub-text {
   color: #ffffff;
-  opacity: 0.7 !important;
+  opacity: 0.8 !important;
   font-family: "Poppins", sans-serif;
-  font-weight: 400 !important;
+  font-weight: 300 ;
   margin-top: 10px;
   font-size: 15px;
-  line-height: 23px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
 }
 
 /* From cssbuttons.io by @alexmaracinaru */
@@ -70,9 +71,10 @@
 }
 
 .cta span {
-  font-family: "Commissioner", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-bottom: 7px;
   font-size: 15px;
+  text-transform: capitalize;
   padding-right: 15px;
   color: #ffffff;
   opacity: 0.5;

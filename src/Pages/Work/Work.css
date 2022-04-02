@@ -1,14 +1,15 @@
 .projects-list {
-  max-width: 70%;
+  max-width: 90%;
   margin: auto;
-  padding: 50px 0;
+  padding-top: 80px;
 }
 
 .project-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   /* background-color: #1d1d1d; */
   margin: 40px 0;
 }
@@ -18,28 +19,30 @@
   justify-content: center;
   align-content: center;
   align-items: flex-start;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .project-details h1 {
-  font-family: "Commissioner", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
   color: #ffffff;
   opacity: 0.9;
 }
 .project-details p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
   color: #ffffff;
-  opacity: 0.6;
-  font-weight: 400;
-  line-height: 25px;
+  opacity: 0.8;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: .3px;
+  margin-top: 5px;
 }
 .project-container img {
   display: block;
   /* margin: 0 20px; */
-  width: 40%;
+  width: 100%;
   height: auto;
 }
 
@@ -61,6 +64,7 @@
   transform: translateY(-0.2em);
   transition: transform 0.1s ease;
   padding: 10px 32px;
+  margin: 15px 0;
 }
 
 .site-link:hover {

@@ -22,7 +22,7 @@
 .HContact-title {
   width: 100%;
   font-family: "Manrope", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 800;
   color: #27496d;
   max-width: 90%;
@@ -39,7 +39,8 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
-  white-space: pre-line;
+  /* white-space: pre-line; */
+  letter-spacing: .2px;
 }
 
 .content form .user-details {
