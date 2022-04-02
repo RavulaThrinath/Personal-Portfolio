@@ -44,12 +44,14 @@ const Contact = () => {
         <h1 className="fake-title">Contact</h1>
       </div>
       <div className="container">
-        <div className="HContact-heading">
-          <div className="HContact-title">Contact Me</div>
-          <div className="HContact-subtitle">
-            {`Let's talk about how we can bring \n your ideas to life together`}
+        <Bounce top delay={100}>
+          <div className="HContact-heading">
+            <div className="HContact-title">Contact Me</div>
+            <div className="HContact-subtitle">
+              {`Let's talk about how we can bring \n your ideas to life together`}
+            </div>
           </div>
-        </div>
+        </Bounce>
         <div className="content">
           <form>
             <div className="user-details">
@@ -117,9 +119,9 @@ const Contact = () => {
               </Bounce>
             </div>
             <Bounce left delay={350}>
-            <button>
-            <span className="button_top"> Send Message </span>
-            </button>
+              <button>
+                <span className="button_top"> Send Message </span>
+              </button>
             </Bounce>
           </form>
         </div>
