@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
-// import { pageVariants, pageTransition, pageStyle } from "../../Data";
-// import { motion } from "framer-motion";
+import Bounce from "react-reveal/Bounce";
 
 // import { db } from "../../firebase";
 // import { collection, addDoc } from "firebase/firestore";
@@ -40,8 +39,7 @@ const Contact = () => {
   //   setAboutproject("");
   // };
   return (
-    <div
-    >
+    <div>
       <div className="fake-title-parent">
         <h1 className="fake-title">Contact</h1>
       </div>
@@ -55,62 +53,74 @@ const Contact = () => {
         <div className="content">
           <form>
             <div className="user-details">
-              <div className="input-box">
-                <span className="details">First name</span>
-                <input
-                  type="text"
-                  placeholder="Enter your first name"
-                  required
-                  // value={firstname}
-                  // onChange={(e) => setFirstname(e.target.value)}
-                />
-              </div>
-              <div className="input-box">
-                <span className="details">Last name</span>
-                <input
-                  type="text"
-                  placeholder="Enter your first name"
-                  required
-                  // value={lastname}
-                  // onChange={(e) => setLastname(e.target.value)}
-                />
-              </div>
-              <div className="input-box">
-                <span className="details">Email</span>
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  required
-                  // value={mail}
-                  // onChange={(e) => setMail(e.target.value)}
-                />
-              </div>
-              <div className="input-box">
-                <span className="details">Phone Number</span>
-                <input
-                  type="text"
-                  placeholder="Enter your phone numbers"
-                  required
-                  // value={phonenumber}
-                  // onChange={(e) => setPhonenumber(e.target.value)}
-                />
-              </div>
-              <div className="textarea-box">
-                <span className="details">Short brief</span>
-                <textarea
-                  type="text"
-                  placeholder="Tell me about your project"
-                  rows="4"
-                  cols="50"
-                  required
-                  // value={aboutproject}
-                  // onChange={(e) => setAboutproject(e.target.value)}
-                />
-              </div>
+              <Bounce left delay={100}>
+                <div className="input-box">
+                  <span className="details">First name</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your first name"
+                    required
+                    // value={firstname}
+                    // onChange={(e) => setFirstname(e.target.value)}
+                  />
+                </div>
+              </Bounce>
+              <Bounce left delay={150}>
+                <div className="input-box">
+                  <span className="details">Last name</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your first name"
+                    required
+                    // value={lastname}
+                    // onChange={(e) => setLastname(e.target.value)}
+                  />
+                </div>
+              </Bounce>
+              <Bounce left delay={200}>
+                <div className="input-box">
+                  <span className="details">Email</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    required
+                    // value={mail}
+                    // onChange={(e) => setMail(e.target.value)}
+                  />
+                </div>
+              </Bounce>
+              <Bounce left delay={250}>
+                <div className="input-box">
+                  <span className="details">Phone Number</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your phone numbers"
+                    required
+                    // value={phonenumber}
+                    // onChange={(e) => setPhonenumber(e.target.value)}
+                  />
+                </div>
+              </Bounce>
+              <Bounce left delay={300}>
+                <div className="textarea-box">
+                  <span className="details">Short brief</span>
+                  <textarea
+                    type="text"
+                    placeholder="Tell me about your project"
+                    rows="4"
+                    cols="50"
+                    required
+                    // value={aboutproject}
+                    // onChange={(e) => setAboutproject(e.target.value)}
+                  />
+                </div>
+              </Bounce>
             </div>
+            <Bounce left delay={350}>
             <button>
-              <span className="button_top"> Send Message </span>
+            <span className="button_top"> Send Message </span>
             </button>
+            </Bounce>
           </form>
         </div>
       </div>

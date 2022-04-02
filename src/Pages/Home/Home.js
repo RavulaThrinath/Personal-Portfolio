@@ -25,26 +25,24 @@ const Home = () => {
     <>
       <div>
         <div className="hometext">
-          <Bounce top delay={300} >
+          <Bounce top delay={100}>
             <div className="intro">Hi there, I'm</div>
-          </Bounce>
-          <Bounce top delay={200}>
             <div className="main-title">3 Nath </div>
           </Bounce>
 
-          <Bounce top delay={100}>
+          <Bounce bottom delay={100}>
             <div className="subtext">
               <p className="subtext-1">Brings ideas to life with code</p>
               <p className="subtext-2">
                 Web developer. UI/UX Designer. Content Creator.
               </p>
             </div>
+            <div className="btn-links">
+              <Link to="/contact" className="button-27">
+                Contact Me
+              </Link>
+            </div>
           </Bounce>
-          <div className="btn-links">
-            <Link to="/contact" className="button-27">
-              Contact Me
-            </Link>
-          </div>
         </div>
         {/*<div className="social-icons">
           <div className="social-icons-border">
