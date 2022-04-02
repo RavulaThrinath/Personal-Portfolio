@@ -1,6 +1,12 @@
 .blogpost {
-  max-width: 60%;
-  margin: auto;
+  max-width: 90%;
+  margin: 70px auto;
+}
+.main-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 10px auto 30px auto;
 }
 .blog_title {
   color: #fff;
@@ -9,17 +15,26 @@
   font-size: 40px;
 }
 .blog_text h1 {
-  font-size: 40px;
+  font-size: 30px;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 38px;
+}
+.blog_text h2 {
+  font-size: 25px;
+  color: #fff;
+  opacity: 0.9;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .blog_text h3 {
-  font-size: 25px;
+  font-size: 22px;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  margin: 40px 0 5px 0;
+  margin: 10px 0 5px 0;
   font-weight: 500;
 }
 .blog_text h4 {
@@ -29,29 +44,33 @@
   margin: 0px 0 5px 0;
   font-weight: 500;
 }
+.blog_text ul {
+  list-style: none;
+  color: #fff;
+}
+.blog_text ul li {
+  margin: 10px 0;
+}
 .blog_text p {
-  color: #b8b8b8;
-  line-height: 26px;
-  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  opacity: .8;
+  line-height: 23px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   letter-spacing: 0.1px;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 25px;
-  font-weight: normal;
 }
 .blog_text a {
   text-decoration: none;
-  color: #b8b8b8;
+  color: #ffffff;
 }
 
 .blog_text img {
-  width: 500px;
-}
-.main-img img {
   display: block;
-  width: 800px;
-  height: auto;
-  margin: 10px auto 30px auto;
+  width: 100%;
 }
+
 /* From cssbuttons.io by @satyamchaudharydev */
 .loader {
   --height-of-loader: 2px;
