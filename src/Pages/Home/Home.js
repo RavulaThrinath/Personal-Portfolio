@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-// import Bounce from "react-reveal/Bounce";
+import Bounce from "react-reveal/Bounce";
 // import { motion } from "framer-motion";
 // import {pageVariants, pageTransition, pageStyle} from "../../Data"
 
@@ -9,7 +9,6 @@ import "./Home.css";
 // import About from "../About/About";
 // import { FaFacebookF } from "react-icons/fa";
 // import { RiFacebookFill, RiInstagramFill, RiTwitterFill } from "react-icons/ri";
-
 
 const Home = () => {
   const [arrow, setArrow] = useState(true);
@@ -24,20 +23,23 @@ const Home = () => {
   window.addEventListener("scroll", arrowVisible);
   return (
     <>
-      <div
-      >
+      <div>
         <div className="hometext">
-          <div className="intro">Hi there, I'm</div>
+          <Bounce top delay={300} >
+            <div className="intro">Hi there, I'm</div>
+          </Bounce>
+          <Bounce top delay={200}>
+            <div className="main-title">3 Nath </div>
+          </Bounce>
 
-          <div className="main-title">3 Nath </div>
-
-          <div className="subtext">
-            <p className="subtext-1">Brings ideas to life with code</p>
-
-            <p className="subtext-2">
-              Web developer. UI/UX Designer. Content Creator.
-            </p>
-          </div>
+          <Bounce top delay={100}>
+            <div className="subtext">
+              <p className="subtext-1">Brings ideas to life with code</p>
+              <p className="subtext-2">
+                Web developer. UI/UX Designer. Content Creator.
+              </p>
+            </div>
+          </Bounce>
           <div className="btn-links">
             <Link to="/contact" className="button-27">
               Contact Me
