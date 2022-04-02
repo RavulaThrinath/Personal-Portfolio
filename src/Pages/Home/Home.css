@@ -184,18 +184,18 @@
   transform: translate(-50%, 0%);
   z-index: -1;
 } */
-
+/* 
 .box {
   position: absolute;
-  bottom: 50px;
-  left: 96%;
+  bottom: 25px;
+  left: 50%;
   cursor: pointer;
 }
 
 .box span {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-bottom: 1px solid #757575;
   border-right: 1px solid #757575;
   transform: rotate(45deg);
@@ -224,4 +224,4 @@
     opacity: 0;
     transform: rotate(45deg) translate(10px, 10px);
   }
-}
+} */
