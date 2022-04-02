@@ -16,13 +16,13 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .HContact-title {
   width: 100%;
   font-family: "Manrope", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 800;
   color: #27496d;
   max-width: 90%;
@@ -36,9 +36,9 @@
   font-family: "Poppins", sans-serif;
   color: #eeeeee;
   opacity: 0.8;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 22px;
   white-space: pre-line;
 }
 
@@ -140,7 +140,7 @@ form button:active .button_top {
   /* Push the button downwards when pressed */
   transform: translateY(0);
 }
-
+/* 
 @media (max-width: 584px) {
   .container {
     max-width: 100%;
@@ -189,4 +189,4 @@ form button:active .button_top {
     line-height: 30px;
     width: 100%;
   }
-}
+} */

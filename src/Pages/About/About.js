@@ -35,7 +35,7 @@ const About = () => {
           </div>
         </div>
       </div>
-     {/* <Skill />*/}
+     <Skill />
     </div>
   );
 };
