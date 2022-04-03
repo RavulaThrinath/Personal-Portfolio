@@ -3,8 +3,6 @@ import "./About.css";
 import AboutImage from "../../Assets/AboutImage.svg";
 import { Link } from "react-router-dom";
 import Skill from "./Skills/Skill";
-// import { motion } from "framer-motion";
-// import { pageVariants, pageTransition, pageStyle } from "../../Data";
 
 const About = () => {
   return (
@@ -29,13 +27,12 @@ const About = () => {
             executed front-end user experiences by paying close attention to the
             nuances of design, optimization, and performance.
           </h4>
-
           <div className="morebtn">
             <MoreButton btntext="Let’s make something special" />
           </div>
         </div>
       </div>
-     <Skill />
+      <Skill />
     </div>
   );
 };

@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
   width: 100%;
   height: 100%;
   margin: auto;
-  background: #ffffff;
+  background: #161b22;
   display: grid;
   align-items: center;
   border: 10px solid #1d1d1d;
@@ -21,7 +21,7 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #1d1d1d;
+  color: #ffffff;
 `;
 export const Icon = styled.div`
   position: absolute;
@@ -47,7 +47,7 @@ export const SidebarIcons = styled.div`
 `;
 export const SocialIcons = styled.a`
   margin-right: 15px;
-  color: #000000;
+  color: #8b949e;
   text-decoration: none;
   font-size: 15px;
   border: 1px solid #c7c7c7;
@@ -73,12 +73,12 @@ export const SidebarLink = styled(LinkS)`
   text-decoration: none;
   list-style: none;
   transition: all.2s ease-in-out;
-  color: #000000;
+  color: #f0f6fc;
   font-family: "Commissioner";
   cursor: pointer;
 
   &:hover {
-    color: #27496d;
+    color: #7f78d2;
     transition: 0.2s ease-in-out;
   }
 `;

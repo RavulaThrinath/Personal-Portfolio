@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Bounce from "react-reveal/Bounce";
-// import { motion } from "framer-motion";
-// import {pageVariants, pageTransition, pageStyle} from "../../Data"
-
-// import Contact from "../Contact/Contact";
-// import About from "../About/About";
-// import { FaFacebookF } from "react-icons/fa";
-// import { RiFacebookFill, RiInstagramFill, RiTwitterFill } from "react-icons/ri";
 
 const Home = () => {
   const [arrow, setArrow] = useState(true);
@@ -25,24 +17,31 @@ const Home = () => {
     <>
       <div>
         <div className="hometext">
-          <Bounce top delay={100}>
-            <div className="intro">Hi there, I'm</div>
-            <div className="main-title">3 Nath </div>
-          </Bounce>
+          <div className="intro" data-aos="fade-right" data-aos-delay="200">
+            Hi there, I'm
+          </div>
+          <div
+            className="main-title"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            3 Nath
+          </div>
 
-          <Bounce bottom delay={100}>
-            <div className="subtext">
-              <p className="subtext-1">Brings ideas to life with code</p>
-              <p className="subtext-2">
-                Web developer. UI/UX Designer. Content Creator.
-              </p>
-            </div>
-            <div className="btn-links">
-              <Link to="/contact" className="button-27">
-                Contact Me
-              </Link>
-            </div>
-          </Bounce>
+          <div className="subtext">
+            <p className="subtext-1">Brings ideas to life with code</p>
+            <p className="subtext-2">
+              Web developer. UI/UX Designer. Content Creator.
+            </p>
+          </div>
+          <div className="btn-links">
+            <Link to="/contact" className="button-27">
+              Contact Me
+            </Link>
+            <Link to="/contact" className="button-28">
+              Download CV
+            </Link>
+          </div>
         </div>
         {/*<div className="social-icons">
           <div className="social-icons-border">

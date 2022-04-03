@@ -39,7 +39,7 @@
   box-sizing: border-box;
 }
 :root {
-  --Main-color: #27496d;
+  --Main-color: #7f78d2;
 }
 /* html,
 body, * {
@@ -47,7 +47,8 @@ body, * {
 } */
 
 body {
-  background-color: #1d1d1d;
+  width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;

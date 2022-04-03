@@ -35,7 +35,7 @@ const Header = ({ toggle }) => {
             place="right"
             effect="solid"
             textColor="#fff"
-            backgroundColor="#27496d"
+            backgroundColor="#7f78d2"
           >
             Home
           </ReactTooltip>*/}
@@ -53,7 +53,7 @@ const Header = ({ toggle }) => {
             place="right"
             effect="solid"
             textColor="#fff"
-            backgroundColor="#27496d"
+            backgroundColor="#7f78d2"
           >
             About
           </ReactTooltip>*/}
@@ -71,7 +71,7 @@ const Header = ({ toggle }) => {
             place="right"
             effect="solid"
             textColor="#fff"
-            backgroundColor="#27496d"
+            backgroundColor="#7f78d2"
           >
             Works
           </ReactTooltip>*/}
@@ -89,7 +89,7 @@ const Header = ({ toggle }) => {
             place="right"
             effect="solid"
             textColor="#fff"
-            backgroundColor="#27496d"
+            backgroundColor="#7f78d2"
           >
             Blogs
           </ReactTooltip>*/}
@@ -107,7 +107,7 @@ const Header = ({ toggle }) => {
             place="right"
             effect="solid"
             textColor="#fff"
-            backgroundColor="#27496d"
+            backgroundColor="#7f78d2"
           >
             Contact
           </ReactTooltip>*/}

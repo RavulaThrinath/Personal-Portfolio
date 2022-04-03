@@ -16,7 +16,7 @@ const TsParticles = () => {
           autoPlay: true,
           background: {
             color: {
-              value: "#1d1d1d",
+              value: "#0d1117",
             },
             image: "",
             position: "100%",

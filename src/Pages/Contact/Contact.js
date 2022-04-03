@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import Bounce from "react-reveal/Bounce";
+// import { pageVariants, pageTransition, pageStyle } from "../../Data";
+// import { motion } from "framer-motion";
 
 // import { db } from "../../firebase";
 // import { collection, addDoc } from "firebase/firestore";
@@ -44,85 +45,101 @@ const Contact = () => {
         <h1 className="fake-title">Contact</h1>
       </div>
       <div className="container">
-        <Bounce top delay={100}>
-          <div className="HContact-heading">
-            <div className="HContact-title">Contact Me</div>
-            <div className="HContact-subtitle">
-              {`Let's talk about how we can bring \n your ideas to life together`}
-            </div>
+        <div className="HContact-heading">
+          <div className="HContact-title">Contact Me</div>
+          <div className="HContact-subtitle">
+            {`Let's talk about how we can bring \n your ideas to life together`}
           </div>
-        </Bounce>
+        </div>
         <div className="content">
           <form>
             <div className="user-details">
-              <Bounce left delay={100}>
-                <div className="input-box">
-                  <span className="details">First name</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your first name"
-                    required
-                    // value={firstname}
-                    // onChange={(e) => setFirstname(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={150}>
-                <div className="input-box">
-                  <span className="details">Last name</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your first name"
-                    required
-                    // value={lastname}
-                    // onChange={(e) => setLastname(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={200}>
-                <div className="input-box">
-                  <span className="details">Email</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    required
-                    // value={mail}
-                    // onChange={(e) => setMail(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={250}>
-                <div className="input-box">
-                  <span className="details">Phone Number</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your phone numbers"
-                    required
-                    // value={phonenumber}
-                    // onChange={(e) => setPhonenumber(e.target.value)}
-                  />
-                </div>
-              </Bounce>
-              <Bounce left delay={300}>
-                <div className="textarea-box">
-                  <span className="details">Short brief</span>
-                  <textarea
-                    type="text"
-                    placeholder="Tell me about your project"
-                    rows="4"
-                    cols="50"
-                    required
-                    // value={aboutproject}
-                    // onChange={(e) => setAboutproject(e.target.value)}
-                  />
-                </div>
-              </Bounce>
+              <div
+                className="input-box"
+                data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="100"
+                data-aos-duration="100"
+              >
+                <span className="details">First name</span>
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  required
+                  // value={firstname}
+                  // onChange={(e) => setFirstname(e.target.value)}
+                />
+              </div>
+              <div
+                className="input-box"
+                data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="150"
+                data-aos-duration="150"
+              >
+                <span className="details">Last name</span>
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  required
+                  // value={lastname}
+                  // onChange={(e) => setLastname(e.target.value)}
+                />
+              </div>
+              <div
+                className="input-box"
+                data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="200"
+                data-aos-duration="200"
+              >
+                <span className="details">Email</span>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  required
+                  // value={mail}
+                  // onChange={(e) => setMail(e.target.value)}
+                />
+              </div>
+              <div
+                className="input-box"
+                data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="250"
+                data-aos-duration="250"
+              >
+                <span className="details">Phone Number</span>
+                <input
+                  type="text"
+                  placeholder="Enter your phone numbers"
+                  required
+                  // value={phonenumber}
+                  // onChange={(e) => setPhonenumber(e.target.value)}
+                />
+              </div>
+              <div
+                className="textarea-box"
+                data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="300"
+                data-aos-duration="300"
+              >
+                <span className="details">Short brief</span>
+                <textarea
+                  type="text"
+                  placeholder="Tell me about your project"
+                  rows="4"
+                  cols="50"
+                  required
+                  // value={aboutproject}
+                  // onChange={(e) => setAboutproject(e.target.value)}
+                />
+              </div>
             </div>
-            <Bounce left delay={350}>
-              <button>
-                <span className="button_top"> Send Message </span>
-              </button>
-            </Bounce>
+            <button>
+              <span className="button_top"> Send Message </span>
+            </button>
           </form>
         </div>
       </div>

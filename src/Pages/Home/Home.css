@@ -17,7 +17,7 @@
 }
 .intro {
   font-family: "mySecondFont", cursive;
-  color: #646464;
+  color: #8b949e;
   font-size: 17px;
   font-weight: normal;
   letter-spacing: 1px;
@@ -25,7 +25,7 @@
 .main-title {
   width: 100%;
   line-height: 110px;
-  color: #8d8d8d;
+  color: #f0f6fc;
   font-family: "Antonio", sans-serif;
   font-weight: 600;
   letter-spacing: -7px;
@@ -44,7 +44,7 @@
   display: grid;
   margin: 40px 0 20px 0;
   font-family: "Poppins", sans-serif;
-  color: #8d8d8d;
+  color: #8b949e;
   font-weight: 500;
 }
 .subtext-1 {
@@ -57,6 +57,8 @@
 
 .btn-links {
   width: 100%;
+  max-width: 90%;
+  margin: auto;
   height: auto;
   display: flex;
   justify-content: center;
@@ -66,9 +68,11 @@
 }
 /* CSS */
 .button-27 {
+  width: 40%;
   appearance: none;
-  background-color: #27496d;
-  border: 2px solid #27496d;
+  background-color: #7f78d2;
+  border: 2px solid #7f78d2;
+  /* border: 2px solid #7f78d2; */
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -87,8 +91,8 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
-  padding: 11px 30px;
-  border-radius: 100px;
+  line-height: 40px;
+  border-radius: 6px;
 }
 
 .button-27:disabled {
@@ -96,21 +100,27 @@
 }
 
 .button-27:hover {
-  box-shadow: #27496d52 0 8px 15px;
-  transform: translateY(0);
+  color: #fff;
+  background-color: #7f78d2;
+  box-shadow: #7f78d252 0 8px 15px;
+  transform: translateY(-2px);
 }
 
 .button-27:active {
   box-shadow: none;
   transform: translateY(0);
 }
-
-/* .button-28 {
-  padding: 15px 50px;
+.button-28 {
+  width: 40%;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-left: 10px;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #27496d;
+  border: 2px solid #7f78d2;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -127,6 +137,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
+  border-radius: 5px;
 }
 
 .button-28:disabled {
@@ -136,14 +147,14 @@
 .button-28:hover {
   color: #fff;
   background-color: #1d1d1d;
-  box-shadow: #27496d52 0 8px 15px;
+  box-shadow: #7f78d252 0 8px 15px;
   transform: translateY(-2px);
 }
 
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
-} */
+}
 
 /* .social-icons {
   position: fixed;
@@ -152,7 +163,7 @@
   transform: translate(-50%, -50%);
 }
 .social-icons a {
-  color: #27496d;
+  color: #7f78d2;
   font-size: 25px;
   border: 1px solid transparent;
   width: 30px;
@@ -177,7 +188,7 @@
   content: "";
   width: 0.5px;
   height: calc(100vh - 60vh);
-  background-color: #27496d;
+  background-color: #7f78d2;
   top: 50%;
   left: 50%;
   bottom: 0;

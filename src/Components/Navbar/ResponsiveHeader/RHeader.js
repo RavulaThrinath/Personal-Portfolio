@@ -9,7 +9,7 @@ import {
   SidebarWrapper,
   SocialIcons,
 } from "./RHeaderStyle";
-import { FaSnapchatGhost, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 // import { socialMediaLinks } from "../../../Data";
 
@@ -29,9 +29,6 @@ const NavElements = ({ isOpen, toggle }) => {
             <SidebarLink to="/contact">Contact</SidebarLink>
           </SidebarMenu>
           <SidebarIcons>
-            <SocialIcons href="./" target="_blank">
-              <FaSnapchatGhost />
-            </SocialIcons>
             <SocialIcons href="./" target="_blank">
               <AiFillInstagram />
             </SocialIcons>
