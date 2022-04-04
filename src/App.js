@@ -19,7 +19,9 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      once: true
+    });
   }, []);
   const [isOpen, setIsOpen] = useState(false);
 

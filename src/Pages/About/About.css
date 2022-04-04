@@ -36,9 +36,8 @@
 .About-main-text p {
   line-height: 20px;
   font-size: 18px;
-  color: #c4c4c4;
+  color: #f0f6fcc8;
   white-space: pre-line;
-  text-transform: capitalize;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   /* opacity: 0.7; */
@@ -46,18 +45,16 @@
 .About-main-text span {
   font-weight: 500;
   font-size: 20px;
-  color: #fff;
+  color: #f0f6fc;
   text-transform: uppercase;
 }
 .about-sub-text {
-  color: #ffffff;
-  opacity: 0.8 !important;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400 ;
+  color: #8b949e;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   margin-top: 10px;
   font-size: 15px;
   line-height: 22px;
-  letter-spacing: 0.3px;
 }
 
 /* From cssbuttons.io by @alexmaracinaru */

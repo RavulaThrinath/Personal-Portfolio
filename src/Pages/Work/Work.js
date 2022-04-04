@@ -24,14 +24,6 @@ const Work = () => {
         </div>
         {projectList.map((project) => (
           <div className="project-container" key={project.id}>
-            <img
-              src={project.imageId}
-              alt=""
-              data-aos="fade-right"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="400"
-              data-aos-duration="400"
-            />
             <div
               className="project-details"
               data-aos="fade-right"
@@ -42,12 +34,27 @@ const Work = () => {
               <h1>{project.projectName}</h1>
               <p>{project.projectDes}</p>
               <a
-                className="site-link"
+                class="site-link"
                 href={project.siteURL}
                 target="_blank"
                 rel="noreferrer"
               >
-                Visit Site
+                <span>Visit Site</span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                    fill="#8b949e"
+                  ></path>
+                </svg>
               </a>
             </div>
           </div>

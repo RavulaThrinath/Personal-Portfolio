@@ -1,31 +1,3 @@
-// export const pageVariants = {
-//   initial: {
-//     opacity: 0,
-//     x: "-100vw",
-//     scale: 0.8,
-//   },
-//   in: {
-//     opacity: 1,
-//     x: 0,
-//     scale: 1,
-//   },
-//   out: {
-//     opacity: 0,
-//     x: "100vw",
-//     scale: 1.2,
-//   },
-// };
-
-// export const pageTransition = {
-//   type: "tween",
-//   ease: "anticipate",
-//   duration: 0.9,
-// };
-
-// export const pageStyle = {
-//   position: "absolute",
-// };
-
 export const hServicesList = [
   {
     id: 0,
@@ -61,7 +33,7 @@ export const projectList = [
       "https://images.pexels.com/photos/3153201/pexels-photo-3153201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     projectName: "Techlab IT",
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials more accessible. To that end, BookWorm provides branch location information for. ",
+      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
   {
     id: 1,
@@ -70,6 +42,6 @@ export const projectList = [
       "https://images.pexels.com/photos/7691749/pexels-photo-7691749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     projectName: "NSP Stacks",
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials more accessible. To that end, BookWorm provides branch location information for. ",
+      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
 ];
