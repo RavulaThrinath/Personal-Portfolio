@@ -9,8 +9,12 @@ import {
   SidebarWrapper,
   SocialIcons,
 } from "./RHeaderStyle";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import {
+  AiFillFacebook,
+  // AiFillInstagram,
+  AiFillTwitterSquare,
+  AiFillLinkedin,
+} from "react-icons/ai";
 // import { socialMediaLinks } from "../../../Data";
 
 const NavElements = ({ isOpen, toggle }) => {
@@ -30,13 +34,13 @@ const NavElements = ({ isOpen, toggle }) => {
           </SidebarMenu>
           <SidebarIcons>
             <SocialIcons href="./" target="_blank">
-              <AiFillInstagram />
+              <AiFillFacebook />
             </SocialIcons>
             <SocialIcons href="./" target="_blank">
-              <FaLinkedinIn />
+              <AiFillTwitterSquare />
             </SocialIcons>
             <SocialIcons href="./" target="_blank">
-              <FaTwitter />
+              <AiFillLinkedin />
             </SocialIcons>
           </SidebarIcons>
         </SidebarWrapper>

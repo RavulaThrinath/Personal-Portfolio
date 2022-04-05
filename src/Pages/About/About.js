@@ -15,12 +15,8 @@ const About = () => {
           <img src={AboutImage} alt="" />
         </div>
         <div className="About-main-text">
-          <p>
-            Hi, My Name is <span>Thrinath Ravula,</span>
-          </p>
-          <p>
-            A Web <span>designer</span> and <span>Developer</span>
-          </p>
+          <p>Hello, it's me</p>
+          <h1>Thrinath Ravula</h1>
           <h4 className="about-sub-text">
             Specializing in refined digital web experiences with a focus on
             animated, responsive, and interactive content. Delivering highly

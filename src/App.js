@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 import BlogPost1 from "./Components/BlogPosts/BlogPost1";
 import ScrollTop from "./Components/ScrollTop/ScrollTop";
 // import Cursor from "./Components/Cursor/Cursor";
-import { AnimatePresence } from "framer-motion";
+import Footer from "./Components/Footer/Footer"
 
 function App() {
   useEffect(() => {
@@ -36,7 +36,6 @@ function App() {
         <ScrollTop />
         <RHeader isOpen={isOpen} toggle={toggle} />
         <Header toggle={toggle} />
-        <AnimatePresence>
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
@@ -45,7 +44,7 @@ function App() {
             <Route path="/blogs" element={<Blog />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
           </Routes>
-        </AnimatePresence>
+          <Footer />
       </div>
     </Router>
   );

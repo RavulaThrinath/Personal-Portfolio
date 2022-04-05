@@ -39,14 +39,12 @@ const Blog = () => {
           </div>
         </div>
         {posts.map((post) => (
-          <Link
-            to={`/blogs/${post.slug.current}`}
-            key={post.slug.current}
-            className="blog-container"
-          >
+          <div key={post.slug.current} className="blog-container">
             <img src={post.mainImage.asset.url} alt={post.title} />
-            <h2>{post.title}</h2>
-          </Link>
+            <Link to={`/blogs/${post.slug.current}`}>
+              <h2>{post.title}</h2>
+            </Link>
+          </div>
         ))}
       </div>
     </>

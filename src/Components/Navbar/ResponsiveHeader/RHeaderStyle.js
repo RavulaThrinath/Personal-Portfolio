@@ -17,7 +17,6 @@ export const SidebarContainer = styled.aside`
   transition: 0.1s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -46,17 +45,13 @@ export const SidebarIcons = styled.div`
   align-items: center;
 `;
 export const SocialIcons = styled.a`
-  margin-right: 15px;
-  color: #8b949e;
+  margin-right: 10px;
+  color: #f0f6fc;
   text-decoration: none;
-  font-size: 15px;
-  border: 1px solid #c7c7c7;
-  padding: 7px;
-  border-radius: 100px;
-  line-height: 6px;
+  font-size: 20px;
+  /* padding: 7px; */
   &:hover {
     color: #ffffff;
-    border: 1px solid #ffffff;
   }
   &:last-child {
     margin-right: 0;
@@ -69,12 +64,12 @@ export const SidebarLink = styled(LinkS)`
   justify-content: center;
   text-align: center;
   font-size: 1.3rem;
-  font-weight: 800;
+  font-weight: 500;
   text-decoration: none;
   list-style: none;
   transition: all.2s ease-in-out;
   color: #f0f6fc;
-  font-family: "Commissioner";
+  font-family: "Inter", sans-serif;
   cursor: pointer;
 
   &:hover {

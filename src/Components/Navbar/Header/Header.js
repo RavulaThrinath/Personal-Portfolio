@@ -8,14 +8,14 @@ import { GrMail } from "react-icons/gr";
 import { AiFillHome } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
 import { BsTrophyFill } from "react-icons/bs";
-// import ReactTooltip from "react-tooltip";
+import MainLogo from "../../../Assets/MainLogo.svg"
 
 const Header = ({ toggle }) => {
   return (
     <Navbar className="navbar">
       <div className="navbar-content">
         <div className="res-nav">
-          <h1>3 Nath</h1>
+          <img src={MainLogo} alt="" />
           <div className="hamburger" onClick={toggle}>
             <BsList />
           </div>
@@ -30,15 +30,7 @@ const Header = ({ toggle }) => {
           >
             <AiFillHome />
           </NavLink>
-          {/*<ReactTooltip
-            id="hometip"
-            place="right"
-            effect="solid"
-            textColor="#fff"
-            backgroundColor="#7f78d2"
-          >
-            Home
-          </ReactTooltip>*/}
+
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "links")}
             to="/about"
@@ -48,15 +40,7 @@ const Header = ({ toggle }) => {
           >
             <FaUserAlt />
           </NavLink>
-          {/*<ReactTooltip
-            id="abouttip"
-            place="right"
-            effect="solid"
-            textColor="#fff"
-            backgroundColor="#7f78d2"
-          >
-            About
-          </ReactTooltip>*/}
+
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "links")}
             to="/works"
@@ -66,15 +50,7 @@ const Header = ({ toggle }) => {
           >
             <BsTrophyFill />
           </NavLink>
-          {/*<ReactTooltip
-            id="worktip"
-            place="right"
-            effect="solid"
-            textColor="#fff"
-            backgroundColor="#7f78d2"
-          >
-            Works
-          </ReactTooltip>*/}
+
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "links")}
             to="/blogs"
@@ -84,15 +60,7 @@ const Header = ({ toggle }) => {
           >
             <RiArticleFill />
           </NavLink>
-          {/*<ReactTooltip
-            id="blogtip"
-            place="right"
-            effect="solid"
-            textColor="#fff"
-            backgroundColor="#7f78d2"
-          >
-            Blogs
-          </ReactTooltip>*/}
+
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "links")}
             to="/contact"
@@ -102,15 +70,6 @@ const Header = ({ toggle }) => {
           >
             <GrMail />
           </NavLink>
-          {/* <ReactTooltip
-            id="contacttip"
-            place="right"
-            effect="solid"
-            textColor="#fff"
-            backgroundColor="#7f78d2"
-          >
-            Contact
-          </ReactTooltip>*/}
         </div>
       </div>
     </Navbar>

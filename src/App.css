@@ -40,6 +40,8 @@
 }
 :root {
   --Main-color: #7f78d2;
+  --second-color: #f0f6fc;
+  --third-color: #8b949e;
 }
 /* html,
 body, * {
@@ -53,10 +55,10 @@ body {
 }
 a {
   text-decoration: none;
-  text-align: center;
+  /* text-align: center;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: flex; */
 }
 ::-webkit-scrollbar {
   width: 9px;
