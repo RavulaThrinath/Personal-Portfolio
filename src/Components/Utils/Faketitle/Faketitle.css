@@ -1,0 +1,15 @@
+.fake-title-parent {
+  position: relative;
+}
+
+.fake-title {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  font-size: 80px;
+  color: #f0f6fc06;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -5px;
+  font-weight: 700;
+  z-index: -1;
+}

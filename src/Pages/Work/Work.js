@@ -2,20 +2,19 @@ import React from "react";
 import "./Work.css";
 // import projectImage from "../../Assets/techlabit.png";
 import { projectList } from "../../Data";
+import Heading from "../../Components/Utils/Heading/Heading";
+import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 
 const Work = () => {
   return (
     <div>
-      <div className="fake-title-parent">
-        <h1 className="fake-title">Work</h1>
-      </div>
+    <Faketitle fakeTitle="Work" />
       <div className="projects-list">
-        <div className="HContact-heading">
-          <div className="HContact-title">My Works</div>
-          <div className="HContact-subtitle">
-            {`A small sampling of what I've been \n up to over the last couple of years`}
-          </div>
-        </div>
+        <Heading
+          headingTitle={`My Works`}
+          headingSubTitle={`A small sampling of what I've been \n up to over the last couple of years.`}
+        />
+
         {projectList.map((project) => (
           <div className="project-container" key={project.id}>
             <div className="project-details">

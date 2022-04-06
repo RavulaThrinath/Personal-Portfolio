@@ -10,14 +10,16 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiSolidity } from "react-icons/si";
+import Heading from "../../../Components/Utils/Heading/Heading";
 
 const Skill = () => {
   return (
     <section className="skills">
-      <div className="HContact-heading">
-        <div className="HContact-title">My Skills</div>
-        <div className="HContact-subtitle">{`I like to craft beautiful and \n scalable Web products.`}</div>
-      </div>
+      <Heading
+        headingTitle={`My Skills`}
+        headingSubTitle={`I like to craft beautiful and scalable Web products.`}
+      />
+
       <div className="skill-icons">
         <div className="skill-container">
           <FaHtml5 />

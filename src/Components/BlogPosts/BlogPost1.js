@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import client from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import "./BlogPost.css";
-import Preloader from "../Preloader/Preloder";
+import Preloader from "../Preloader/Preloader";
 
 const BlogPost1 = () => {
   const [singlePost, setSinglePost] = useState([]);

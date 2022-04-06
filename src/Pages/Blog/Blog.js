@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import client from "../../client";
-
-// import Preloder from "../../Components/Preloader/Preloder";
+import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
+import Heading from "../../Components/Utils/Heading/Heading";
 import "./Blog.css";
 // import ContentLoader from "react-content-loader";
 
@@ -32,12 +32,12 @@ const Blog = () => {
   return (
     <>
       <div className="blog-list">
-        <div className="HContact-heading">
-          <div className="HContact-title">Blogs</div>
-          <div className="HContact-subtitle">
-            {`A blog is almost like an online journal and suggests a regular focus`}
-          </div>
-        </div>
+        <Faketitle fakeTitle="Blog" />
+        <Heading
+          headingTitle={`Blogs`}
+          headingSubTitle={`A blog is almost like an online journal and suggests a regular focus.`}
+        />
+
         {posts.map((post) => (
           <div key={post.slug.current} className="blog-container">
             <img src={post.mainImage.asset.url} alt={post.title} />

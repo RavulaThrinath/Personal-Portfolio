@@ -15,41 +15,45 @@ import "aos/dist/aos.css";
 import BlogPost1 from "./Components/BlogPosts/BlogPost1";
 import ScrollTop from "./Components/ScrollTop/ScrollTop";
 // import Cursor from "./Components/Cursor/Cursor";
-import Footer from "./Components/Footer/Footer"
+import Footer from "./Components/Footer/Footer";
+import Preloader from "./Components/Preloader/Preloader";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [load, upadateLoad] = useState(true);
   useEffect(() => {
     Aos.init({
-      once: true
+      once: true,
     });
+    setTimeout(() => {
+      upadateLoad(false);
+    }, 2800);
   }, []);
-  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
   return (
     <Router>
-      <div>
+      <Preloader load={load} />
+      <div className="app" id={load ? "no-scroll" : "scroll"}>
         <TsParticles />
         {/*<Cursor />*/}
         <ScrollTop />
         <RHeader isOpen={isOpen} toggle={toggle} />
         <Header toggle={toggle} />
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/works" element={<Work />}></Route>
-            <Route path="/blogs/:slug" element={<BlogPost1 />}></Route>
-            <Route path="/blogs" element={<Blog />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-          </Routes>
-          <Footer />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/works" element={<Work />}></Route>
+          <Route path="/blogs/:slug" element={<BlogPost1 />}></Route>
+          <Route path="/blogs" element={<Blog />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+        <Footer />
       </div>
     </Router>
   );
 }
 
 export default App;
-
-

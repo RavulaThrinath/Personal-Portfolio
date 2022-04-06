@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import Heading from "../../Components/Utils/Heading/Heading";
+import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 
 const Contact = () => {
   const form = useRef();
@@ -27,16 +29,12 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="fake-title-parent">
-        <h1 className="fake-title">Contact</h1>
-      </div>
+    <Faketitle fakeTitle="Contact" />
       <div className="container">
-        <div className="HContact-heading">
-          <div className="HContact-title">Contact Me</div>
-          <div className="HContact-subtitle">
-            {`Let's talk about how we can bring \n your ideas to life together`}
-          </div>
-        </div>
+        <Heading
+          headingTitle={`Contact Me`}
+          headingSubTitle={`Let's talk about how we can bring your ideas to life together`}
+        />
         <div className="content">
           <form ref={form} onSubmit={sendEmail}>
             <div className="user-details">

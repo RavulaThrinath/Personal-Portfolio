@@ -3,13 +3,12 @@ import "./About.css";
 import Cat from "../../Assets/Cat.svg";
 import { Link } from "react-router-dom";
 import Skill from "./Skills/Skill";
+import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 
 const About = () => {
   return (
     <div>
-      <div className="fake-title-parent">
-        <h1 className="fake-title">About</h1>
-      </div>
+      <Faketitle fakeTitle="About" />
       <div className="about-container">
         <div className="about-image">
           <img src={Cat} alt="" />
