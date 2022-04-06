@@ -10,7 +10,7 @@ const Work = () => {
         <h1 className="fake-title">Work</h1>
       </div>
       <div className="projects-list">
-        <div className="HContact-heading" data-aos="fade-right">
+        <div className="HContact-heading">
           <div className="HContact-title">My Works</div>
           <div className="HContact-subtitle">
             {`A small sampling of what I've been \n up to over the last couple of years`}

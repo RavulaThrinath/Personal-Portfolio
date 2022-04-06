@@ -42,6 +42,7 @@
   --Main-color: #7f78d2;
   --second-color: #f0f6fc;
   --third-color: #8b949e;
+  --background-color: #0d1117;
 }
 /* html,
 body, * {
@@ -51,7 +52,7 @@ body, * {
 body {
   width: 100%;
   height: auto;
-  background-color: #0d1117;
+  background-color: var(--background-color);
 }
 a {
   text-decoration: none;

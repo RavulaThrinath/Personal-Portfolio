@@ -35,7 +35,7 @@ const Blog = () => {
         <div className="HContact-heading">
           <div className="HContact-title">Blogs</div>
           <div className="HContact-subtitle">
-            {`Let's talk about how we can bring \n your ideas to life together`}
+            {`A blog is almost like an online journal and suggests a regular focus`}
           </div>
         </div>
         {posts.map((post) => (

@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  /* background-color: #1d1d1d; */
+  background-color: var(--background-color);
   margin: 40px 0;
   border: 1px solid #8b949e56;
   border-radius: 5px;
