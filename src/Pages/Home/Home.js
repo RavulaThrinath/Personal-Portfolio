@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import resume from "../../Assets/Thrinath Ravula (1).pdf";
 
 const Home = () => {
   const [arrow, setArrow] = useState(true);
@@ -17,16 +18,8 @@ const Home = () => {
     <>
       <div>
         <div className="hometext">
-          <div className="intro" data-aos="fade-right" data-aos-delay="200">
-            Hi there, I'm
-          </div>
-          <div
-            className="main-title"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            3 Nath
-          </div>
+          <div className="intro">Hi there, I'm</div>
+          <div className="main-title">3 Nath</div>
 
           <div className="subtext">
             <p className="subtext-1">Brings ideas to life with code</p>
@@ -38,9 +31,9 @@ const Home = () => {
             <Link to="/contact" className="button-27">
               Contact Me
             </Link>
-            <Link to="/contact" className="button-28">
+            <a href={resume} download className="button-28">
               Download CV
-            </Link>
+            </a>
           </div>
         </div>
         {/*<div className="social-icons">

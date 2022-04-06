@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import AboutImage from "../../Assets/AboutImage.svg";
+import Cat from "../../Assets/Cat.svg";
 import { Link } from "react-router-dom";
 import Skill from "./Skills/Skill";
 
@@ -12,16 +12,16 @@ const About = () => {
       </div>
       <div className="about-container">
         <div className="about-image">
-          <img src={AboutImage} alt="" />
+          <img src={Cat} alt="" />
         </div>
         <div className="About-main-text">
           <p>Hello, it's me</p>
           <h1>Thrinath Ravula</h1>
           <h4 className="about-sub-text">
-            Specializing in refined digital web experiences with a focus on
-            animated, responsive, and interactive content. Delivering highly
-            executed front-end user experiences by paying close attention to the
-            nuances of design, optimization, and performance.
+            Specializing in refined web experiences with a focus on animated,
+            responsive, and interactive content. Delivering highly executed
+            front-end user experiences by paying close attention to the nuances
+            of design, optimization, and performance.
           </h4>
           <div className="morebtn">
             <MoreButton btntext="Let’s make something special" />

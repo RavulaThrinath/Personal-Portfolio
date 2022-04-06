@@ -1,44 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
-// import { pageVariants, pageTransition, pageStyle } from "../../Data";
-// import { motion } from "framer-motion";
-
-// import { db } from "../../firebase";
-// import { collection, addDoc } from "firebase/firestore";
-// import LightSpeed from "react-reveal/LightSpeed";
 
 const Contact = () => {
-  // const [firstname, setFirstname] = useState("");
-  // const [lastname, setLastname] = useState("");
-  // const [mail, setMail] = useState("");
-  // const [phonenumber, setPhonenumber] = useState("");
-  // const [aboutproject, setAboutproject] = useState("");
+  const form = useRef();
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const docRef = addDoc(collection(db, "Contact Form in Home Page"), {
-  //       FirstName: firstname,
-  //       LastEmail: lastname,
-  //       Email: mail,
-  //       Number: phonenumber,
-  //       Message: aboutproject,
-  //     });
-  //     Swal.fire(
-  //       "Message Sent!",
-  //       "Our Team will contact you as soon as possible",
-  //       "success"
-  //     );
-  //     console.log("Document written with ID: ", docRef.id);
-  //   } catch (error) {
-  //     console.log(error.message);
-  //   }
-  //   setFirstname("");
-  //   setLastname("");
-  //   setMail("");
-  //   setPhonenumber("");
-  //   setAboutproject("");
-  // };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_if4bs33",
+        "template_qgliu1o",
+        form.current,
+        "lGOS_RSp7CIG6dsHJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <div className="fake-title-parent">
@@ -52,7 +38,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="content">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="user-details">
               <div
                 className="input-box"
@@ -65,9 +51,8 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Enter your first name"
+                  name="first_name"
                   required
-                  // value={firstname}
-                  // onChange={(e) => setFirstname(e.target.value)}
                 />
               </div>
               <div
@@ -80,10 +65,9 @@ const Contact = () => {
                 <span className="details">Last name</span>
                 <input
                   type="text"
-                  placeholder="Enter your first name"
+                  placeholder="Enter your last name"
+                  name="last_name"
                   required
-                  // value={lastname}
-                  // onChange={(e) => setLastname(e.target.value)}
                 />
               </div>
               <div
@@ -97,9 +81,8 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Enter your email"
+                  name="email"
                   required
-                  // value={mail}
-                  // onChange={(e) => setMail(e.target.value)}
                 />
               </div>
               <div
@@ -112,10 +95,9 @@ const Contact = () => {
                 <span className="details">Phone Number</span>
                 <input
                   type="text"
-                  placeholder="Enter your phone numbers"
+                  placeholder="Enter your phone number"
+                  name="number"
                   required
-                  // value={phonenumber}
-                  // onChange={(e) => setPhonenumber(e.target.value)}
                 />
               </div>
               <div
@@ -129,16 +111,18 @@ const Contact = () => {
                 <textarea
                   type="text"
                   placeholder="Tell me about your project"
+                  name="message"
                   rows="4"
                   cols="50"
                   required
-                  // value={aboutproject}
-                  // onChange={(e) => setAboutproject(e.target.value)}
                 />
               </div>
             </div>
             <button>
-              <span className="button_top"> Send Message </span>
+              <span className="button_top" type="submit" value="send">
+                {" "}
+                Send Message{" "}
+              </span>
             </button>
           </form>
         </div>

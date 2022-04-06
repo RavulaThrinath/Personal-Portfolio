@@ -2,20 +2,22 @@
 import "./Header.css";
 import { Navbar } from "react-bootstrap";
 import { BsList } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { RiArticleFill } from "react-icons/ri";
 import { GrMail } from "react-icons/gr";
 import { AiFillHome } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
 import { BsTrophyFill } from "react-icons/bs";
-import MainLogo from "../../../Assets/MainLogo.svg"
+import MainLogo from "../../../Assets/MainLogo.svg";
 
 const Header = ({ toggle }) => {
   return (
     <Navbar className="navbar">
       <div className="navbar-content">
         <div className="res-nav">
-          <img src={MainLogo} alt="" />
+          <Link to="/">
+            <img src={MainLogo} alt="" />
+          </Link>
           <div className="hamburger" onClick={toggle}>
             <BsList />
           </div>

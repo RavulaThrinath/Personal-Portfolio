@@ -59,7 +59,7 @@ form .textarea-box span.details {
   display: block;
   font-weight: 500;
   margin: 0 0 5px 5px;
-  color: #d2d2d2;
+  color: var(--second-color);
   font-size: 15px;
 }
 .user-details .input-box input {
@@ -71,14 +71,14 @@ form .textarea-box span.details {
   padding-left: 15px;
   /* border: .5px solid #1d1d1d; */
   border: none;
-  color: #d8d8d8;
+  color: var(--third-color);
   background: #161b22;
   transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .user-details .textarea-box textarea {
-  font-family: "Poppins", sans-serif;
-  color: #8d8d8d;
+  font-family: "Inter", sans-serif;
+  color: var(--third-color);
   width: 100%;
   background: #161b22;
   height: auto;
@@ -98,17 +98,17 @@ textarea {
 .user-details .input-box input:valid,
 .user-details .textarea-box textarea:valid,
 .user-details .textarea-box textarea:focus {
-  box-shadow: 2px 4px 10px #7f78d244;
+  box-shadow: 1px 4px 10px #7f78d214;
 }
 ::placeholder {
-  color: #d2d2d2;
+  color: var(--third-color);
 }
 
 .content button {
   /* Variables */
   --button_radius: 0.75em;
   --button_color: #7f78d2;
-  --button_outline_color: #2c3a49;
+  --button_outline_color: #585297;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
