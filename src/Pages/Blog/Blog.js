@@ -9,7 +9,7 @@ import "./Blog.css";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState();
 
   useEffect(() => {
     client
