@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { Skeleton } from "@mui/material";
+import React, { useState, useEffect, Suspense } from "react";
 import { Link } from "react-router-dom";
 import client from "../../client";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
@@ -7,6 +8,15 @@ import "./Blog.css";
 // import ContentLoader from "react-content-loader";
 
 const Blog = () => {
+  return (
+    <Suspense fallback={<Skeletonn />}>
+      <Blogg />
+    </Suspense>
+  );
+};
+export default Blog;
+
+export const Blogg = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -30,7 +40,7 @@ const Blog = () => {
       .catch(console.error);
   }, []);
   return (
-    <>
+    <div>
       <div className="blog-list">
         <Faketitle fakeTitle="Blog" />
         <Heading
@@ -47,8 +57,16 @@ const Blog = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default Blog;
+export const Skeletonn = () => {
+  return (
+    <div>
+      <Skeleton variant="rectangular" />
+      <Skeleton />
+      <Skeleton />
+    </div>
+  );
+};
