@@ -60,15 +60,14 @@
 }
 
 .cta span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   padding-bottom: 7px;
   font-size: 15px;
   text-transform: capitalize;
   padding-right: 15px;
-  color: #ffffff;
-  opacity: 0.5;
+  color: var(--third-color);
+  opacity: 0.8;
   font-weight: normal;
-  /* letter-spacing: 0.5px; */
   transition: 0.2s ease-in-out;
 }
 

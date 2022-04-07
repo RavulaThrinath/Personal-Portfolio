@@ -1,5 +1,5 @@
 import { Skeleton } from "@mui/material";
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import client from "../../client";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
@@ -8,16 +8,8 @@ import "./Blog.css";
 // import ContentLoader from "react-content-loader";
 
 const Blog = () => {
-  return (
-    <Suspense fallback={<Skeletonn />}>
-      <Blogg />
-    </Suspense>
-  );
-};
-export default Blog;
-
-export const Blogg = () => {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     client
@@ -38,6 +30,7 @@ export const Blogg = () => {
       )
       .then((data) => setPosts(data))
       .catch(console.error);
+    setLoading(true);
   }, []);
   return (
     <div>
@@ -47,26 +40,24 @@ export const Blogg = () => {
           headingTitle={`Blogs`}
           headingSubTitle={`A blog is almost like an online journal and suggests a regular focus.`}
         />
-
         {posts.map((post) => (
           <div key={post.slug.current} className="blog-container">
-            <img src={post.mainImage.asset.url} alt={post.title} />
-            <Link to={`/blogs/${post.slug.current}`}>
-              <h2>{post.title}</h2>
-            </Link>
+            {loading ? (
+              <img src={post.mainImage.asset.url} alt={post.title} />
+            ) : (
+              <Skeleton variant="rectangular" />
+            )}
+            {loading ? (
+              <Link to={`/blogs/${post.slug.current}`} className="blog-link">
+                <h2>{post.title}</h2>
+              </Link>
+            ) : (
+              <Skeleton />
+            )}
           </div>
         ))}
       </div>
     </div>
   );
 };
-
-export const Skeletonn = () => {
-  return (
-    <div>
-      <Skeleton variant="rectangular" />
-      <Skeleton />
-      <Skeleton />
-    </div>
-  );
-};
+export default Blog;

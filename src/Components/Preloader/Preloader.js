@@ -3,7 +3,7 @@ import "./Preloader.css";
 
 const Preloader = (props) => {
   return (
-    <div class="loader" id={props.load ? "preloader" : "preloader-none"}>
+    <div className="loader" id={props.load ? "preloader" : "preloader-none"}>
       <span>L</span>
       <span>O</span>
       <span>A</span>
