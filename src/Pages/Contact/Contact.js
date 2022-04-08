@@ -29,11 +29,11 @@ const Contact = () => {
 
   return (
     <div>
-    <Faketitle fakeTitle="Contact" />
+      <Faketitle fakeTitle="Contact" />
       <div className="container">
         <Heading
           headingTitle={`Contact Me`}
-          headingSubTitle={`Let's talk about how we can bring your ideas to life together`}
+          headingSubTitle={`Let's talk about how we can bring \n your ideas to life together`}
         />
         <div className="content">
           <form ref={form} onSubmit={sendEmail}>
@@ -41,9 +41,9 @@ const Contact = () => {
               <div
                 className="input-box"
                 data-aos="fade-right"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="100"
-                data-aos-duration="100"
+                // data-aos-anchor="#example-anchor"
+                // data-aos-offset="100"
+                data-aos-delay="50"
               >
                 <span className="details">First name</span>
                 <input
@@ -57,8 +57,8 @@ const Contact = () => {
                 className="input-box"
                 data-aos="fade-right"
                 data-aos-anchor="#example-anchor"
-                data-aos-offset="150"
-                data-aos-duration="150"
+                // data-aos-offset="150"
+                data-aos-delay="100"
               >
                 <span className="details">Last name</span>
                 <input
@@ -72,8 +72,8 @@ const Contact = () => {
                 className="input-box"
                 data-aos="fade-right"
                 data-aos-anchor="#example-anchor"
-                data-aos-offset="200"
-                data-aos-duration="200"
+                // data-aos-offset="200"
+                data-aos-delay="150"
               >
                 <span className="details">Email</span>
                 <input
@@ -87,8 +87,8 @@ const Contact = () => {
                 className="input-box"
                 data-aos="fade-right"
                 data-aos-anchor="#example-anchor"
-                data-aos-offset="250"
-                data-aos-duration="250"
+                // data-aos-offset="250"
+                data-aos-delay="200"
               >
                 <span className="details">Phone Number</span>
                 <input
@@ -102,8 +102,8 @@ const Contact = () => {
                 className="textarea-box"
                 data-aos="fade-right"
                 data-aos-anchor="#example-anchor"
-                data-aos-offset="300"
-                data-aos-duration="300"
+                // data-aos-offset="300"
+                data-aos-delay="250"
               >
                 <span className="details">Short brief</span>
                 <textarea
@@ -116,10 +116,13 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <button>
+            <button
+              data-aos="fade-right"
+              data-aos-anchor="#example-anchor"
+              data-aos-delay="300"
+            >
               <span className="button_top" type="submit" value="send">
-                {" "}
-                Send Message{" "}
+                Send Message
               </span>
             </button>
           </form>

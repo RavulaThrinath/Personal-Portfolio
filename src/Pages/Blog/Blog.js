@@ -33,13 +33,13 @@ const Blog = () => {
     setLoading(true);
   }, []);
   return (
-    <div>
+    <div className="blog">
+      <Faketitle fakeTitle="Blog" />
+      <Heading
+        headingTitle={`Blogs`}
+        headingSubTitle={`A blog is almost like an online journal \n and suggests a regular focus.`}
+      />
       <div className="blog-list">
-        <Faketitle fakeTitle="Blog" />
-        <Heading
-          headingTitle={`Blogs`}
-          headingSubTitle={`A blog is almost like an online journal and suggests a regular focus.`}
-        />
         {posts.map((post) => (
           <div key={post.slug.current} className="blog-container">
             {loading ? (

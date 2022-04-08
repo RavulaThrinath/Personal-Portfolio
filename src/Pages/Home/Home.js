@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <div>
         <div className="hometext">
-          <div className="intro">Hi there, I'm</div>
+          <div className="intro" >Hi there, I'm</div>
           <div className="main-title">3 Nath</div>
 
           <div className="subtext">

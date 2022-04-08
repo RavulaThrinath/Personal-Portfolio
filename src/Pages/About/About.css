@@ -32,14 +32,8 @@
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0.2px;
-  /* opacity: 0.7; */
 }
-.About-main-text span {
-  font-weight: 500;
-  font-size: 20px;
-  color: #f0f6fc;
-  text-transform: uppercase;
-}
+
 .about-sub-text {
   color: #8b949e;
   font-family: "Inter", sans-serif;
@@ -106,4 +100,32 @@
 .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    max-width: 60%;
+    padding: 50px 0;
+  }
+  .about-container img {
+    width: 80%;
+  }
+  .About-main-text {
+    width: 100%;
+    margin: 0;
+  }
+  .About-main-text h1 {
+    font-size: 45px;
+  }
+  .About-main-text p {
+    font-size: 20px;
+  }
+  .about-sub-text {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  .cta span {
+    font-size: 17px;
+  }
 }

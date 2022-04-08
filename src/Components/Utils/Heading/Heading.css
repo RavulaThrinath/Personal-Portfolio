@@ -9,9 +9,9 @@
 
 .heading-title {
   width: 100%;
-  font-family: "Manrope", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--Main-color);
   margin-bottom: 5px;
   letter-spacing: -1px;
@@ -25,4 +25,21 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  white-space: pre-line;
 }
+
+@media only screen and (min-width: 768px) {
+  .heading-title {
+    font-size: 27px;
+  }
+  
+  .heading-subtitle {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    color: #8b949e;
+    opacity: 0.8;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+ }
