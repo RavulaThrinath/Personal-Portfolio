@@ -29,8 +29,6 @@ export const projectList = [
   {
     id: 0,
     siteURL: "https://www.techlabit.com/",
-    imageId:
-      "https://images.pexels.com/photos/3153201/pexels-photo-3153201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     projectName: "Techlab IT",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
@@ -38,9 +36,21 @@ export const projectList = [
   {
     id: 1,
     siteURL: "https://www.nspstackssolutions.com/",
-    imageId:
-      "https://images.pexels.com/photos/7691749/pexels-photo-7691749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     projectName: "NSP Stacks",
+    projectDes:
+      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+  },
+  {
+    id: 2,
+    siteURL: "https://www.nspstackssolutions.com/",
+    projectName: "Spont Store",
+    projectDes:
+      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+  },
+  {
+    id: 3,
+    siteURL: "https://www.nspstackssolutions.com/",
+    projectName: "Techlab IT",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },

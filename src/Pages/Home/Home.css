@@ -235,3 +235,40 @@
     transform: rotate(45deg) translate(10px, 10px);
   }
 } */
+
+@media only screen and (min-width: 768px) {
+  .main-title {
+    width: 100%;
+    line-height: 110px;
+    color: #f0f6fc;
+    font-family: "Antonio", sans-serif;
+    font-weight: 600;
+    letter-spacing: -7px;
+    font-size: 180px;
+  }
+  .subtext {
+    width: 100%;
+    display: grid;
+    margin: 40px 0 20px 0;
+    font-family: "Inter", sans-serif;
+    color: #8b949e;
+    font-weight: 500;
+  }
+  .subtext-1 {
+    font-size: 28px;
+    margin-bottom: 1px;
+  }
+  .subtext-2 {
+    font-size: 16.3px;
+  }
+  .btn-links {
+    width: 100%;
+    max-width: 35%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

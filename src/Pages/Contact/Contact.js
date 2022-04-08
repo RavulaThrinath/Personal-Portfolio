@@ -3,10 +3,11 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Heading from "../../Components/Utils/Heading/Heading";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
+// import Alert from "@mui/material/Alert";
+// import AlertTitle from "@mui/material/AlertTitle";
 
 const Contact = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -19,10 +20,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
+          alert(result.text);
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
+          alert(error.text);
         }
       );
   };
