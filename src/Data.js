@@ -28,6 +28,7 @@ export const hServicesList = [
 export const projectList = [
   {
     id: 0,
+    dataDelay: "100",
     siteURL: "https://www.techlabit.com/",
     projectName: "Techlab IT",
     projectDes:
@@ -35,6 +36,7 @@ export const projectList = [
   },
   {
     id: 1,
+    dataDelay: "150",
     siteURL: "https://www.nspstackssolutions.com/",
     projectName: "NSP Stacks",
     projectDes:
@@ -42,6 +44,7 @@ export const projectList = [
   },
   {
     id: 2,
+    dataDelay: "200",
     siteURL: "https://www.nspstackssolutions.com/",
     projectName: "Spont Store",
     projectDes:
@@ -49,6 +52,7 @@ export const projectList = [
   },
   {
     id: 3,
+    dataDelay: "250",
     siteURL: "https://www.nspstackssolutions.com/",
     projectName: "Techlab IT",
     projectDes:

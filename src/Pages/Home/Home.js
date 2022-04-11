@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import resume from "../../Assets/Thrinath Ravula (1).pdf";
 
 const Home = () => {
-  const [arrow, setArrow] = useState(true);
-  const arrowVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 50) {
-      setArrow(false);
-    } else if (scrolled <= 500) {
-      setArrow(true);
-    }
-  };
-  window.addEventListener("scroll", arrowVisible);
+  // const [arrow, setArrow] = useState(true);
+  // const arrowVisible = () => {
+  //   const scrolled = document.documentElement.scrollTop;
+  //   if (scrolled > 50) {
+  //     setArrow(false);
+  //   } else if (scrolled <= 500) {
+  //     setArrow(true);
+  //   }
+  // };
+  // window.addEventListener("scroll", arrowVisible);
   return (
-    <>
+    <section>
       <div>
         <div className="hometext">
           <div className="intro" >Hi there, I'm</div>
@@ -49,15 +49,15 @@ const Home = () => {
             </a>
           </div>
         </div>*/}
-        <div className="box" style={{ display: arrow ? "inline" : "none" }}>
+       {/* <div className="box" style={{ display: arrow ? "inline" : "none" }}>
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div>*/}
       </div>
       {/*  <About />
       <Contact />*/}
-    </>
+    </section>
   );
 };
 

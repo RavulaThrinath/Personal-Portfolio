@@ -112,11 +112,12 @@ form button:active .button_top {
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 60%;
-    margin: 60px auto 0;
+    margin: 80px auto 0;
   }
   .content form .user-details {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 50px ;
   }
   form .user-details .input-box {
     margin-bottom: 20px;

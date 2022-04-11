@@ -237,9 +237,12 @@
 } */
 
 @media only screen and (min-width: 768px) {
+  .hometext {
+    padding-top: 0;
+  }
   .main-title {
     width: 100%;
-    line-height: 110px;
+    line-height: 130px;
     color: #f0f6fc;
     font-family: "Antonio", sans-serif;
     font-weight: 600;

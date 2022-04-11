@@ -106,7 +106,8 @@
   .about-container {
     flex-direction: row;
     max-width: 60%;
-    padding: 50px 0;
+    height: 100vh;
+    margin: auto ;
   }
   .about-container img {
     width: 80%;
