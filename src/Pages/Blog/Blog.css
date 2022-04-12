@@ -28,7 +28,7 @@
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 .blog-container h2 {
   color: var(--second-color);

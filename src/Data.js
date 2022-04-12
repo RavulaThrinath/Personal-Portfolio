@@ -28,32 +28,32 @@ export const hServicesList = [
 export const projectList = [
   {
     id: 0,
-    dataDelay: "100",
     siteURL: "https://www.techlabit.com/",
     projectName: "Techlab IT",
+    transition: { delay: 0, type: "spring", stiffness: 100 },
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
   {
     id: 1,
-    dataDelay: "150",
     siteURL: "https://www.nspstackssolutions.com/",
+    transition: { delay: .02, type: "spring", stiffness: 100 },
     projectName: "NSP Stacks",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
   {
     id: 2,
-    dataDelay: "200",
     siteURL: "https://www.nspstackssolutions.com/",
+    transition: { delay: .04, type: "spring", stiffness: 100 },
     projectName: "Spont Store",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
   {
     id: 3,
-    dataDelay: "250",
     siteURL: "https://www.nspstackssolutions.com/",
+    transition: { delay: .06, type: "spring", stiffness: 100 },
     projectName: "Techlab IT",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",

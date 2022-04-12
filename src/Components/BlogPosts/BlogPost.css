@@ -70,6 +70,36 @@
   display: block;
   width: 100%;
 }
+
+/* From uiverse.io by @Jedi-hongbin */
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--third-color);
+  font-family: "Inter", sans-serif;
+  /* border-radius: 3px; */
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  /* background: var(--Main-color); */
+  background: none;
+  padding: 12px 0px;
+  font-size: 15px;
+}
+
+.back-btn > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.back-btn:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
 @media only screen and (min-width: 768px) {
   .blogpost {
     max-width: 60%;
@@ -87,7 +117,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin-bottom: 10px;
-    line-height: 38px;
+    line-height: 46px;
   }
   .blog_text h2 {
     font-size: 30px;

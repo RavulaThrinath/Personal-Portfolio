@@ -118,7 +118,7 @@
   text-align: center;
   margin-left: 10px;
   appearance: none;
-  background-color: transparent;
+  background-color: var(--background-color);
   border: 2px solid #7f78d2;
   box-sizing: border-box;
   color: #ffffff;
@@ -145,7 +145,7 @@
 
 .button-28:hover {
   color: #fff;
-  background-color: #1d1d1d;
+  background-color: var(--background-color);
   box-shadow: #7f78d252 0 8px 15px;
   transform: translateY(-2px);
 }

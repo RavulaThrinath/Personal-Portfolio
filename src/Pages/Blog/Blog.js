@@ -6,10 +6,11 @@ import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 import Heading from "../../Components/Utils/Heading/Heading";
 import "./Blog.css";
 // import ContentLoader from "react-content-loader";
+import { motion } from "framer-motion";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     client
@@ -30,38 +31,45 @@ const Blog = () => {
       )
       .then((data) => setPosts(data))
       .catch(console.error);
-    setLoading(true);
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-    return () => clearTimeout(timer);
+    setLoading(false);
   }, []);
   return (
-    <div className="blog">
+    <>
       <Faketitle fakeTitle="Blog" />
-      <Heading
-        headingTitle={`Blogs`}
-        headingSubTitle={`A blog is almost like an online journal \n and suggests a regular focus.`}
-      />
-      <div className="blog-list">
-        {posts.map((post) => (
-          <div key={post.slug.current} className="blog-container">
-            {loading ? (
-              <Skeleton variant="rectangular" />
-            ) : (
-              <img src={post.mainImage.asset.url} alt={post.title} />
-            )}
-            {loading ? (
-              <Skeleton />
-            ) : (
-              <Link to={`/blogs/${post.slug.current}`} className="blog-link">
-                <h2>{post.title}</h2>
-              </Link>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
+      <motion.div
+        className="blog"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100, transition: { duration: 0.2 } }}
+      >
+        <Heading
+          headingTitle={`Blogs`}
+          headingSubTitle={`A blog is almost like an online journal \n and suggests a regular focus.`}
+        />
+        <div className="blog-list">
+          {posts.map((post) => (
+            <div key={post.slug.current} className="blog-container">
+              {loading ? (
+                <div>
+                  <Skeleton variant="rectangular" />
+                  <Skeleton />
+                </div>
+              ) : (
+                <div>
+                  <img src={post.mainImage.asset.url} alt={post.title} />
+                  <Link
+                    to={`/blogs/${post.slug.current}`}
+                    className="blog-link"
+                  >
+                    <h2>{post.title}</h2>
+                  </Link>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </>
   );
 };
 export default Blog;

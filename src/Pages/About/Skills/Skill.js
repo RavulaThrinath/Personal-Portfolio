@@ -21,67 +21,35 @@ const Skill = () => {
       />
 
       <div className="skill-icons">
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="100"
-        >
+        <div className="skill-container">
           <FaHtml5 />
           <p>HTML</p>
         </div>
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="200"
-        >
+        <div className="skill-container">
           <FaCss3Alt />
           <p>CSS</p>
         </div>
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="300"
-        >
+        <div className="skill-container">
           <IoLogoJavascript />
           <p>JavaScript</p>
         </div>
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="400"
-        >
+        <div className="skill-container">
           <FaReact />
           <p>React Js</p>
         </div>
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="500"
-        >
+        <div className="skill-container">
           <FaNode />
           <p>Node Js</p>
         </div>
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="600"
-        >
+        <div className="skill-container">
           <SiSolidity />
           <p>Solidity</p>
         </div>
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="700"
-        >
+        <div className="skill-container">
           <FaGithub />
           <p>Github</p>
         </div>
-        <div
-          className="skill-container"
-          data-aos="fade-right"
-          data-aos-delay="800"
-        >
+        <div className="skill-container">
           <FaFigma />
           <p>Figma</p>
         </div>

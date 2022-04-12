@@ -5,6 +5,7 @@ import Heading from "../../Components/Utils/Heading/Heading";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 // import Alert from "@mui/material/Alert";
 // import AlertTitle from "@mui/material/AlertTitle";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -29,109 +30,122 @@ const Contact = () => {
         }
       );
   };
-
+  const container = {
+    initial: { opacity: 0, x: "100%" },
+    animate: { opacity: 1, x: 0 },
+    // exit: { opacity: 0, y: "-100vw" },
+  };
   return (
-    <div>
+    <>
       <Faketitle fakeTitle="Contact" />
-      <div className="container">
-        <Heading
-          headingTitle={`Contact Me`}
-          headingSubTitle={`Let's talk about how we can bring \n your ideas to life together`}
-        />
-        <div className="content">
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="user-details">
-              <div
-                className="input-box"
-                data-aos="fade-right"
-                // data-aos-anchor="#example-anchor"
-                // data-aos-offset="100"
-                data-aos-delay="50"
-              >
-                <span className="details">First name</span>
-                <input
-                  type="text"
-                  placeholder="Enter your first name"
-                  name="first_name"
-                  required
-                />
+      <motion.section>
+        <div className="container">
+          <Heading
+            headingTitle={`Contact Me`}
+            headingSubTitle={`Let's talk about how we can bring \n your ideas to life together`}
+          />
+          <div className="content">
+            <form ref={form} onSubmit={sendEmail}>
+              <div className="user-details">
+                <motion.div
+                  className="input-box"
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={container}
+                  transition={{ delay: 0.02, type: "tween", stiffness: 200 }}
+                >
+                  <span className="details">First name</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your first name"
+                    name="first_name"
+                    required
+                  />
+                </motion.div>
+                <motion.div
+                  className="input-box"
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={container}
+                  transition={{ delay: 0.04, type: "tween", stiffness: 200 }}
+                >
+                  <span className="details">Last name</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your last name"
+                    name="last_name"
+                    required
+                  />
+                </motion.div>
+                <motion.div
+                  className="input-box"
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={container}
+                  transition={{ delay: 0.06, type: "tween", stiffness: 200 }}
+                >
+                  <span className="details">Email</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    name="email"
+                    required
+                  />
+                </motion.div>
+                <motion.div
+                  className="input-box"
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={container}
+                  transition={{ delay: 0.08, type: "tween", stiffness: 200 }}
+                >
+                  <span className="details">Phone Number</span>
+                  <input
+                    type="text"
+                    placeholder="Enter your phone number"
+                    name="number"
+                    required
+                  />
+                </motion.div>
+                <motion.div
+                  className="textarea-box"
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={container}
+                  transition={{ delay: 0.1, type: "tween", stiffness: 200 }}
+                >
+                  <span className="details">Short brief</span>
+                  <textarea
+                    type="text"
+                    placeholder="Tell me about your project"
+                    name="message"
+                    rows="4"
+                    cols="50"
+                    required
+                  />
+                </motion.div>
               </div>
-              <div
-                className="input-box"
-                data-aos="fade-right"
-                data-aos-anchor="#example-anchor"
-                // data-aos-offset="150"
-                data-aos-delay="100"
+              <motion.button
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                variants={container}
+                transition={{ delay: 0.12, type: "tween", stiffness: 200 }}
               >
-                <span className="details">Last name</span>
-                <input
-                  type="text"
-                  placeholder="Enter your last name"
-                  name="last_name"
-                  required
-                />
-              </div>
-              <div
-                className="input-box"
-                data-aos="fade-right"
-                data-aos-anchor="#example-anchor"
-                // data-aos-offset="200"
-                data-aos-delay="150"
-              >
-                <span className="details">Email</span>
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  name="email"
-                  required
-                />
-              </div>
-              <div
-                className="input-box"
-                data-aos="fade-right"
-                data-aos-anchor="#example-anchor"
-                // data-aos-offset="250"
-                data-aos-delay="200"
-              >
-                <span className="details">Phone Number</span>
-                <input
-                  type="text"
-                  placeholder="Enter your phone number"
-                  name="number"
-                  required
-                />
-              </div>
-              <div
-                className="textarea-box"
-                data-aos="fade-right"
-                data-aos-anchor="#example-anchor"
-                // data-aos-offset="300"
-                data-aos-delay="250"
-              >
-                <span className="details">Short brief</span>
-                <textarea
-                  type="text"
-                  placeholder="Tell me about your project"
-                  name="message"
-                  rows="4"
-                  cols="50"
-                  required
-                />
-              </div>
-            </div>
-            <button
-              data-aos="fade-right"
-              data-aos-anchor="#example-anchor"
-              data-aos-delay="300"
-            >
-              <span className="button_top" type="submit" value="send">
-                Send Message
-              </span>
-            </button>
-          </form>
+                <span className="button_top" type="submit" value="send">
+                  Send Message
+                </span>
+              </motion.button>
+            </form>
+          </div>
         </div>
-      </div>
-    </div>
+      </motion.section>
+    </>
   );
 };
 

@@ -1,34 +1,37 @@
 import React from "react";
 import "./About.css";
-import Cat from "../../Assets/Cat.svg";
 import { Link } from "react-router-dom";
 import Skill from "./Skills/Skill";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div>
+    <>
       <Faketitle fakeTitle="About" />
-      <div className="about-container">
-        <div className="about-image">
-          <img src={Cat} alt="" />
-        </div>
-        <div className="About-main-text">
-          <p>Hello, it's me</p>
-          <h1>Thrinath Ravula</h1>
-          <h4 className="about-sub-text">
-            Specializing in refined web experiences with a focus on animated,
-            responsive, and interactive content. Delivering highly executed
-            front-end user experiences by paying close attention to the nuances
-            of design, optimization, and performance.
-          </h4>
-          <div className="morebtn">
-            <MoreButton btntext="Let’s make something special" />
+      <motion.section
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+      >
+        <div className="about-container">
+          <div className="About-main-text">
+            <p>Hello, it's me</p>
+            <h1>Thrinath Ravula</h1>
+            <h4 className="about-sub-text">
+              Specializing in refined web experiences with a focus on animated,
+              responsive, and interactive content. Delivering highly executed
+              front-end user experiences by paying close attention to the
+              nuances of design, optimization, and performance.
+            </h4>
+            <div className="morebtn">
+              <MoreButton btntext="Let’s make something special" />
+            </div>
           </div>
         </div>
-      </div>
-      <Skill />
-    </div>
+        <Skill />
+      </motion.section>
+    </>
   );
 };
 

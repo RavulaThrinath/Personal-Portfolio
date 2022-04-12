@@ -9,11 +9,16 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
 import { BsTrophyFill } from "react-icons/bs";
 import MainLogo from "../../../Assets/MainLogo.svg";
+import { motion } from "framer-motion";
 
 const Header = ({ toggle }) => {
   return (
     <Navbar className="navbar">
-      <div className="navbar-content">
+      <motion.div
+        className="navbar-content"
+        initial={{ x: -50 }}
+        animate={{ x: 0 }}
+      >
         <div className="res-nav">
           <Link to="/">
             <img src={MainLogo} alt="" />
@@ -73,7 +78,7 @@ const Header = ({ toggle }) => {
             <GrMail />
           </NavLink>
         </div>
-      </div>
+      </motion.div>
     </Navbar>
   );
 };
