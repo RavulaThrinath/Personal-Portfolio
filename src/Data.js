@@ -37,24 +37,16 @@ export const projectList = [
   {
     id: 1,
     siteURL: "https://www.nspstackssolutions.com/",
-    transition: { delay: .02, type: "spring", stiffness: 100 },
+    transition: { delay: 0.02, type: "spring", stiffness: 100 },
     projectName: "NSP Stacks",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
   {
     id: 2,
-    siteURL: "https://www.nspstackssolutions.com/",
-    transition: { delay: .04, type: "spring", stiffness: 100 },
+    siteURL: "https://www.spontstore.com/",
+    transition: { delay: 0.04, type: "spring", stiffness: 100 },
     projectName: "Spont Store",
-    projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
-  },
-  {
-    id: 3,
-    siteURL: "https://www.nspstackssolutions.com/",
-    transition: { delay: .06, type: "spring", stiffness: 100 },
-    projectName: "Techlab IT",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
