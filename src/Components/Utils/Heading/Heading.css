@@ -30,7 +30,7 @@
 
 @media only screen and (min-width: 768px) {
   .heading-container {
-    margin: 0;
+    margin-bottom: 40px;
   }
   .heading-title {
     font-size: 27px;

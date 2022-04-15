@@ -30,14 +30,14 @@ export const projectList = [
     id: 0,
     siteURL: "https://www.techlabit.com/",
     projectName: "Techlab IT",
-    transition: { delay: 0, type: "spring", stiffness: 100 },
+    delay: 0.3,
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
   {
     id: 1,
     siteURL: "https://www.nspstackssolutions.com/",
-    transition: { delay: 0.02, type: "spring", stiffness: 100 },
+    delay: 0.4,
     projectName: "NSP Stacks",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
@@ -45,9 +45,43 @@ export const projectList = [
   {
     id: 2,
     siteURL: "https://www.spontstore.com/",
-    transition: { delay: 0.04, type: "spring", stiffness: 100 },
+    delay: 0.5,
     projectName: "Spont Store",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+  },
+];
+export const formDetails = [
+  {
+    id: 0,
+    label: "First name",
+    type: "text",
+    placeholder: "Enter your first name",
+    name: "first_name",
+    time: 0.3,
+  },
+  {
+    id: 1,
+    label: "Last name",
+    type: "text",
+    placeholder: "Enter your last name",
+    name: "last_name",
+    time: 0.35,
+  },
+  {
+    id: 2,
+    label: "Email",
+    type: "text",
+    placeholder: "Enter your email",
+    name: "email",
+    time: 0.4,
+  },
+  {
+    id: 3,
+    label: "Phone Number",
+    type: "number",
+    placeholder: "Enter your phone number",
+    name: "number",
+    time: 0.45,
   },
 ];

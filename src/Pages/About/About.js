@@ -10,19 +10,23 @@ const About = () => {
     <>
       <Faketitle fakeTitle="About" />
       <motion.section
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
+      // initial={{ opacity: 0, x: 100 }}
+      // animate={{ opacity: 1, x: 0 }}
+      // exit={{ opacity: 0, x: -100 }}
       >
         <div className="about-container">
           <div className="About-main-text">
-            <p>Hello, it's me</p>
-            <h1>Thrinath Ravula</h1>
+            <h1>
+              i'm <span>Thrinath Ravula</span> And i'm a <br />
+              <span> web developer</span> and <span>designer.</span>
+            </h1>
+            {/* <h1>Thrinath Ravula</h1> */}
             <h4 className="about-sub-text">
-              Specializing in refined web experiences with a focus on animated,
+              I Specialize in refined web experiences with a focus on animated,
               responsive, and interactive content. Delivering highly executed
               front-end user experiences by paying close attention to the
-              nuances of design, optimization, and performance.
+              nuances of design, optimization, and performance. Always in the
+              lookout for exiting projects to work on.
             </h4>
             <div className="morebtn">
               <MoreButton btntext="Let’s make something special" />

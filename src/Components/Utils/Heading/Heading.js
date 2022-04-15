@@ -6,7 +6,7 @@ const Heading = ({ headingTitle, headingSubTitle }) => {
   const container = {
     initial: { opacity: 0, y: -100 },
     animate: { opacity: 1, y: 0 },
-    // exit: { opacity: 0, x: "-100" },
+    exit: { opacity: 0, x: "-100" },
   };
   return (
     <motion.div
@@ -14,7 +14,7 @@ const Heading = ({ headingTitle, headingSubTitle }) => {
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ delay: 0, type: "tween", stiffness: 100 }}
+      transition={{ type: "tween" }}
       variants={container}
     >
       <div className="heading-title">{headingTitle}</div>

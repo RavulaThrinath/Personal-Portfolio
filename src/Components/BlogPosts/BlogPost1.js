@@ -4,6 +4,7 @@ import client from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import "./BlogPost.css";
 import { useNavigate } from "react-router-dom";
+import { WhatsappShareButton, WhatsappIcon } from "react-share";
 
 const BlogPost1 = () => {
   const [singlePost, setSinglePost] = useState([]);
@@ -28,6 +29,8 @@ const BlogPost1 = () => {
     // setIsLoading(false);
   }, [slug]);
   const navigate = useNavigate();
+  const url = `https://www.3nath.me/blogs/${singlePost.slug}`;
+  // const url = "https://www.3nath.me/blogs/what-is-a-nft";
 
   return (
     <div>
@@ -62,6 +65,9 @@ const BlogPost1 = () => {
             </svg>
             <span>Back to blogs</span>
           </button>
+          <WhatsappShareButton url={url}>
+            <WhatsappIcon size={32} round={true} />
+          </WhatsappShareButton>
         </div>
       </section>
     </div>

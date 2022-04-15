@@ -6,6 +6,7 @@ import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 // import Alert from "@mui/material/Alert";
 // import AlertTitle from "@mui/material/AlertTitle";
 import { motion } from "framer-motion";
+import { formDetails } from "../../Data";
 
 const Contact = () => {
   const form = useRef();
@@ -31,10 +32,11 @@ const Contact = () => {
       );
   };
   const container = {
-    initial: { opacity: 0, x: "100%" },
+    initial: { opacity: 0, x: 100 },
     animate: { opacity: 1, x: 0 },
-    // exit: { opacity: 0, y: "-100vw" },
+    exit: { opacity: 0, x: -100 },
   };
+
   return (
     <>
       <Faketitle fakeTitle="Contact" />
@@ -47,77 +49,36 @@ const Contact = () => {
           <div className="content">
             <form ref={form} onSubmit={sendEmail}>
               <div className="user-details">
-                <motion.div
-                  className="input-box"
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                  variants={container}
-                  transition={{ delay: 0.02, type: "tween", stiffness: 200 }}
-                >
-                  <span className="details">First name</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your first name"
-                    name="first_name"
-                    required
-                  />
-                </motion.div>
-                <motion.div
-                  className="input-box"
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                  variants={container}
-                  transition={{ delay: 0.04, type: "tween", stiffness: 200 }}
-                >
-                  <span className="details">Last name</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your last name"
-                    name="last_name"
-                    required
-                  />
-                </motion.div>
-                <motion.div
-                  className="input-box"
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                  variants={container}
-                  transition={{ delay: 0.06, type: "tween", stiffness: 200 }}
-                >
-                  <span className="details">Email</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    name="email"
-                    required
-                  />
-                </motion.div>
-                <motion.div
-                  className="input-box"
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                  variants={container}
-                  transition={{ delay: 0.08, type: "tween", stiffness: 200 }}
-                >
-                  <span className="details">Phone Number</span>
-                  <input
-                    type="text"
-                    placeholder="Enter your phone number"
-                    name="number"
-                    required
-                  />
-                </motion.div>
+                {formDetails.map((details) => (
+                  <motion.div
+                    key={details.id}
+                    className="input-box"
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    variants={container}
+                    transition={{
+                      delay: `${details.time}`,
+                      type: "spring",
+                      stiffness: 100,
+                    }}
+                  >
+                    <span className="details">{details.label}</span>
+                    <input
+                      type={details.text}
+                      placeholder={details.placeholder}
+                      name={details.name}
+                      required
+                    />
+                  </motion.div>
+                ))}
                 <motion.div
                   className="textarea-box"
                   initial="initial"
                   animate="animate"
                   exit="exit"
                   variants={container}
-                  transition={{ delay: 0.1, type: "tween", stiffness: 200 }}
+                  transition={{ delay: 0.5, type: "spring", stiffness: 100 }}
                 >
                   <span className="details">Short brief</span>
                   <textarea
@@ -129,18 +90,22 @@ const Contact = () => {
                     required
                   />
                 </motion.div>
+                <motion.button
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={container}
+                  transition={{
+                    delay: 0.55,
+                    type: "spring",
+                    stiffness: 100,
+                  }}
+                >
+                  <span className="button_top" type="submit" value="send">
+                    Send Message
+                  </span>
+                </motion.button>
               </div>
-              <motion.button
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                variants={container}
-                transition={{ delay: 0.12, type: "tween", stiffness: 200 }}
-              >
-                <span className="button_top" type="submit" value="send">
-                  Send Message
-                </span>
-              </motion.button>
             </form>
           </div>
         </div>

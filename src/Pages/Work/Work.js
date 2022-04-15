@@ -6,7 +6,11 @@ import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 import { motion } from "framer-motion";
 
 const Work = () => {
-
+  const container = {
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: 100 },
+  };
   return (
     <>
       <Faketitle fakeTitle="Work" />
@@ -25,6 +29,12 @@ const Work = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
+                variants={container}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  delay: `${project.delay}`,
+                }}
               >
                 <h1>{project.projectName}</h1>
                 <p>{project.projectDes}</p>
