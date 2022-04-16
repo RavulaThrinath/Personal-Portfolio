@@ -4,7 +4,15 @@ import client from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import "./BlogPost.css";
 import { useNavigate } from "react-router-dom";
-import { WhatsappShareButton, WhatsappIcon } from "react-share";
+import {
+  WhatsappShareButton,
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+} from "react-share";
+import { IconContext } from "react-icons";
+import { BsFacebook, BsTwitter, BsLinkedin, BsLink45Deg } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const BlogPost1 = () => {
   const [singlePost, setSinglePost] = useState([]);
@@ -29,7 +37,7 @@ const BlogPost1 = () => {
     // setIsLoading(false);
   }, [slug]);
   const navigate = useNavigate();
-  const url = `https://www.3nath.me/blogs/${singlePost.slug}`;
+  const url = `https://www.3nath.me/blogs/${slug}`;
   // const url = "https://www.3nath.me/blogs/what-is-a-nft";
 
   return (
@@ -52,6 +60,28 @@ const BlogPost1 = () => {
             className="blog_text"
           />
 
+          <div className="share-text">
+            <span>Share this:</span>
+            <div className="socialshare-icons">
+              <IconContext.Provider value={{ color: "#99a2ac" }}>
+                <FacebookShareButton url={url}>
+                  <BsFacebook size={18} />
+                </FacebookShareButton>
+                <WhatsappShareButton url={url}>
+                  <IoLogoWhatsapp size={18} />
+                </WhatsappShareButton>
+                <TwitterShareButton url={url}>
+                  <BsTwitter size={18} />
+                </TwitterShareButton>
+                <LinkedinShareButton url={url}>
+                  <BsLinkedin size={16} />
+                </LinkedinShareButton>
+                <button onClick={() => navigator.clipboard.writeText(url)}>
+                  <BsLink45Deg size={16} />
+                </button>
+              </IconContext.Provider>
+            </div>
+          </div>
           <button onClick={() => navigate(-1)} className="back-btn">
             <svg
               height="16"
@@ -65,9 +95,6 @@ const BlogPost1 = () => {
             </svg>
             <span>Back to blogs</span>
           </button>
-          <WhatsappShareButton url={url}>
-            <WhatsappIcon size={32} round={true} />
-          </WhatsappShareButton>
         </div>
       </section>
     </div>

@@ -99,6 +99,25 @@
   font-size: 1.2em;
   transform: translateX(-5px);
 }
+.share-text span {
+  border-top: 1px solid #ffffff10;
+  color: var(--third-color);
+  font-size: 15px;
+  padding-top: 6px;
+}
+.share-text {
+  margin-top: 30px;
+}
+.socialshare-icons button {
+  margin: 5px;
+}
+.socialshare-icons {
+  margin: 10px 0;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 768px) {
   .blogpost {
