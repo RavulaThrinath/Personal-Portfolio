@@ -29,7 +29,9 @@ export const projectList = [
   {
     id: 0,
     siteURL: "https://www.techlabit.com/",
+    urlTitle: "Visit Site",
     projectName: "Techlab IT",
+    category: "js",
     delay: 0.3,
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
@@ -37,20 +39,55 @@ export const projectList = [
   {
     id: 1,
     siteURL: "https://www.nspstackssolutions.com/",
+    urlTitle: "Visit Site",
     delay: 0.4,
     projectName: "NSP Stacks",
+    category: "css",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
   {
     id: 2,
     siteURL: "https://www.spontstore.com/",
+    urlTitle: "View Site",
     delay: 0.5,
     projectName: "Spont Store",
+    category: "css",
+    projectDes:
+      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+  },
+  {
+    id: 3,
+    siteURL: "https://github.com/RavulaThrinath/clock.git",
+    urlTitle: "View Code",
+    delay: 0.6,
+    projectName: "Neumorphism Clock",
+    category: "css",
+    projectDes:
+      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+  },
+  {
+    id: 4,
+    siteURL: "https://github.com/RavulaThrinath/Tic-Tac-Toe.git",
+    urlTitle: "View Code",
+    delay: 0.7,
+    projectName: "Tic Toc Toe",
+    category: "js",
+    projectDes:
+      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+  },
+  {
+    id: 5,
+    siteURL: "https://github.com/RavulaThrinath/Hangman-game.git",
+    urlTitle: "View Code",
+    delay: 0.8,
+    projectName: "Hangman Game",
+    category: "js",
     projectDes:
       "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
   },
 ];
+
 export const formDetails = [
   {
     id: 0,

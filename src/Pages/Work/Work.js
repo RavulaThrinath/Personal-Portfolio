@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Work.css";
 import { projectList } from "../../Data";
 import Heading from "../../Components/Utils/Heading/Heading";
@@ -11,6 +11,15 @@ const Work = () => {
     animate: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: 100 },
   };
+
+  const [items, setItems] = useState(projectList);
+
+  const filterProject = (cateproject) => {
+    const updatedProjects = projectList.filter((currentProjects) => {
+      return currentProjects.category === cateproject;
+    });
+    setItems(updatedProjects);
+  };
   return (
     <>
       <Faketitle fakeTitle="Work" />
@@ -20,9 +29,24 @@ const Work = () => {
             headingTitle={`My Works`}
             headingSubTitle={`A small sampling of what I've been \n up to over the last couple of years.`}
           />
-
+          <motion.div
+            className="cat-btn-container"
+            initial={{ scale: .7 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: .3 }}
+          >
+            <button className="cat-btn" onClick={() => setItems(projectList)}>
+              <span>All</span>
+            </button>
+            <button className="cat-btn" onClick={() => filterProject("js")}>
+              <span> Js</span>
+            </button>
+            <button className="cat-btn" onClick={() => filterProject("css")}>
+              <span>Css</span>
+            </button>
+          </motion.div>
           <div className="projects-list">
-            {projectList.map((project) => (
+            {items.map((project) => (
               <motion.div
                 className="project-container"
                 key={project.id}
@@ -44,7 +68,7 @@ const Work = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span>Visit Site</span>
+                  <span>{project.urlTitle}</span>
                   <svg
                     id="arrow-horizontal"
                     xmlns="http://www.w3.org/2000/svg"

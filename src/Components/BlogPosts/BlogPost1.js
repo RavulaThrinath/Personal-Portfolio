@@ -11,11 +11,14 @@ import {
   LinkedinShareButton,
 } from "react-share";
 import { IconContext } from "react-icons";
-import { BsFacebook, BsTwitter, BsLinkedin, BsLink45Deg } from "react-icons/bs";
+import { BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { MdOutlineContentCopy } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Snackbar from "@mui/material/Snackbar";
 
 const BlogPost1 = () => {
   const [singlePost, setSinglePost] = useState([]);
+  const [open, setOpen] = React.useState(false);
   // const [isLoading, setIsLoading] = useState(true);
   const { slug } = useParams();
   useEffect(() => {
@@ -38,8 +41,13 @@ const BlogPost1 = () => {
   }, [slug]);
   const navigate = useNavigate();
   const url = `https://www.3nath.me/blogs/${slug}`;
-  // const url = "https://www.3nath.me/blogs/what-is-a-nft";
-
+  const copyToClip = async () => {
+    navigator.clipboard.writeText(url);
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div>
       <section className="blogpost">
@@ -76,9 +84,15 @@ const BlogPost1 = () => {
                 <LinkedinShareButton url={url}>
                   <BsLinkedin size={16} />
                 </LinkedinShareButton>
-                <button onClick={() => navigator.clipboard.writeText(url)}>
-                  <BsLink45Deg size={16} />
+                <button onClick={copyToClip}>
+                  <MdOutlineContentCopy size={16} />
                 </button>
+                <Snackbar
+                  open={open}
+                  onClose={handleClose}
+                  message="Link Copied"
+                  autoHideDuration={2000}
+                />
               </IconContext.Provider>
             </div>
           </div>

@@ -114,10 +114,13 @@
 .socialshare-icons {
   margin: 10px 0;
 }
-button {
+/* button {
   all: unset;
   cursor: pointer;
-}
+} */
+/* .css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+  background-color: #7f78d2 !important;
+} */
 
 @media only screen and (min-width: 768px) {
   .blogpost {
