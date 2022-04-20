@@ -37,7 +37,7 @@
 .about-sub-text {
   color: #8b949e;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 5px;
   font-size: 15px;
   line-height: 22px;
@@ -56,10 +56,10 @@
 .cta span {
   font-family: "Inter", sans-serif;
   padding-bottom: 7px;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   padding-right: 15px;
-  color: var(--third-color);
+  color: var(--Main-color);
   opacity: 0.8;
   font-weight: normal;
   transition: 0.2s ease-in-out;
@@ -105,7 +105,7 @@
 @media only screen and (min-width: 768px) {
   .about-container {
     flex-direction: row;
-    max-width: 50%;
+    max-width: 61%;
     height: 100vh;
     padding: 0;
     margin: 0 auto;
@@ -131,8 +131,47 @@
     font-family: "Jost", sans-serif;
   }
   .about-sub-text {
-    font-size: 19px;
+    font-size: 20px;
     line-height: 30px;
+    margin: 20px 0;
+  }
+  .cta span {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .about-container {
+    flex-direction: row;
+    max-width: 60%;
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .About-main-text {
+    width: 100%;
+    margin: 0;
+  }
+  .About-main-text h1 {
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    color: var(--third-color);
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .About-main-text h1 span {
+    font-weight: 500;
+    color: var(--second-color);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+  }
+  .about-sub-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px 0;
   }
   .cta span {
     font-size: 17px;

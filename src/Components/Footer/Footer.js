@@ -1,22 +1,18 @@
 import React from "react";
 import "./Footer.css";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillTwitterSquare,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaFacebookF, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-icons">
+      {/* <div className="footer-icons">
         <a
           href="https://www.facebook.com/tri.nath.96930"
           target="_blank"
           rel="noreferrer"
         >
-          <AiFillFacebook />
+          <FaFacebookF />
         </a>
         <a
           href="https://instagram.com/3_n_a_t_h?utm_medium=copy_link"
@@ -39,10 +35,43 @@ const Footer = () => {
         >
           <AiFillLinkedin />
         </a>
-      </div>
-      <p className="copyright-text"> Thrinath Ravula © 2022 </p>
+      </div> */}
+      <Icons />
+      <p className="copyright-text"> © 2022  Thrinath Ravula. All Rights Reserved </p>
     </footer>
   );
 };
 
 export default Footer;
+
+export const Icons = () => {
+  return (
+    <ul class="wrapper">
+      <li class="icon facebook">
+        <span>
+          <FaFacebookF />
+        </span>
+      </li>
+      <li class="icon twitter">
+        <span>
+          <FaTwitter />
+        </span>
+      </li>
+      <li class="icon instagram">
+        <span>
+          <RiInstagramFill />
+        </span>
+      </li>
+      <li class="icon github">
+        <span>
+          <FaGithub />
+        </span>
+      </li>
+      <li class="icon youtube">
+        <span>
+          <FaLinkedinIn />
+        </span>
+      </li>
+    </ul>
+  );
+};

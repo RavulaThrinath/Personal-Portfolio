@@ -11,6 +11,10 @@ const Work = () => {
     animate: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: 100 },
   };
+  const container1 = {
+    initial: { opacity: 0, scale: 0 },
+    animate: { opacity: 1, scale: 1 },
+  };
 
   const [items, setItems] = useState(projectList);
 
@@ -29,22 +33,39 @@ const Work = () => {
             headingTitle={`My Works`}
             headingSubTitle={`A small sampling of what I've been \n up to over the last couple of years.`}
           />
-          <motion.div
-            className="cat-btn-container"
-            initial={{ scale: .7 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: .3 }}
-          >
-            <button className="cat-btn" onClick={() => setItems(projectList)}>
+          <div className="cat-btn-container">
+            <motion.button
+              variants={container1}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ delay: 0.8, easeOut: [0, 0.25, 0.5, 1] }}
+              className="cat-btn"
+              onClick={() => setItems(projectList)}
+            >
               <span>All</span>
-            </button>
-            <button className="cat-btn" onClick={() => filterProject("js")}>
+            </motion.button>
+            <motion.button
+              variants={container1}
+              initial="initial"
+              animate="animate"
+              transition={{ delay: 0.9 }}
+              className="cat-btn"
+              onClick={() => filterProject("js")}
+            >
               <span> Js</span>
-            </button>
-            <button className="cat-btn" onClick={() => filterProject("css")}>
+            </motion.button>
+            <motion.button
+              variants={container1}
+              initial="initial"
+              animate="animate"
+              transition={{ delay: 1 }}
+              className="cat-btn"
+              onClick={() => filterProject("css")}
+            >
               <span>Css</span>
-            </button>
-          </motion.div>
+            </motion.button>
+          </div>
           <div className="projects-list">
             {items.map((project) => (
               <motion.div
@@ -55,7 +76,7 @@ const Work = () => {
                 exit="exit"
                 variants={container}
                 transition={{
-                  type: "spring",
+                  type: "tween",
                   stiffness: 100,
                   delay: `${project.delay}`,
                 }}

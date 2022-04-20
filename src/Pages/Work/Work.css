@@ -36,17 +36,20 @@
   transition: all 0.3s;
   margin: 0 10px;
 }
+
 .cat-btn:first-child {
   margin-left: 0;
 }
 
-.cat-btn:active,
 .cat-btn:hover {
   outline: 0;
 }
+.cat-btn:target {
+  font-size: 100px;
+}
 
 .cat-btn span {
-  background-color: var(--background-color);
+  background: var(--background-color);
   padding: 12px 20px;
   border-radius: 6px;
   width: 100%;

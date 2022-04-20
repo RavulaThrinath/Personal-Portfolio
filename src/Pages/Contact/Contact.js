@@ -36,6 +36,10 @@ const Contact = () => {
     animate: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: -100 },
   };
+  const container1 = {
+    initial: { opacity: 0, scale: 0 },
+    animate: { opacity: 1, scale: 1 },
+  };
 
   return (
     <>
@@ -94,12 +98,8 @@ const Contact = () => {
                   initial="initial"
                   animate="animate"
                   exit="exit"
-                  variants={container}
-                  transition={{
-                    delay: 0.55,
-                    type: "spring",
-                    stiffness: 100,
-                  }}
+                  variants={container1}
+                  transition={{ delay: 1, easeOut: [0, 0.25, 0.5, 1] }}
                 >
                   <span className="button_top" type="submit" value="send">
                     Send Message
