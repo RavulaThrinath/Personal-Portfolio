@@ -81,7 +81,6 @@
   letter-spacing: 0.6px;
   font-size: 15px;
   font-weight: 600;
-  line-height: normal;
   outline: none;
   text-align: center;
   text-decoration: none;
@@ -90,7 +89,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
-  line-height: 40px;
+  line-height: 50px;
   border-radius: 100px;
 }
 
@@ -111,7 +110,7 @@
 }
 .button-28 {
   width: 40%;
-  line-height: 40px;
+  line-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
