@@ -157,8 +157,8 @@ button {
     font-weight: 500;
   }
   .blog_text p {
-    line-height: 26px;
-    font-size: 18px;
+    line-height: 30px;
+    font-size: 19px;
   }
   .blog_text a {
     color: var(--third-color);

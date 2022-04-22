@@ -14,10 +14,9 @@
 /* From uiverse.io */
 .cat-btn {
   background-image: linear-gradient(144deg, #7f78d2, #928ec0 50%, #7f78d2);
-  border: 0;
+  border: none;
   border-radius: 8px;
   box-shadow: rgb(127, 120, 210, 0.1) 0 15px 30px -5px;
-  box-sizing: border-box;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -27,12 +26,25 @@
   font-size: 15px;
   max-width: 100%;
   padding: 2px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0 10px;
+}
+.cat-btn-active {
+  background-image: linear-gradient(144deg, #7f78d2, #928ec0 50%, #7f78d2);
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgb(127, 120, 210, 0.1) 0 15px 30px -5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  max-width: 100%;
+  padding: 2px;
+  touch-action: manipulation;
   transition: all 0.3s;
   margin: 0 10px;
 }
@@ -57,7 +69,8 @@
   transition: 300ms;
 }
 
-.cat-btn:hover span {
+.cat-btn:hover span,
+.cat-btn-active span {
   background: none;
 }
 

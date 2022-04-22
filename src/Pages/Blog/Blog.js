@@ -1,4 +1,3 @@
-import { Skeleton } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import client from "../../client";
@@ -10,7 +9,6 @@ import { motion } from "framer-motion";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     client
@@ -31,7 +29,6 @@ const Blog = () => {
       )
       .then((data) => setPosts(data))
       .catch(console.error);
-    setLoading(false);
   }, []);
   return (
     <>
@@ -49,22 +46,9 @@ const Blog = () => {
         <div className="blog-list">
           {posts.map((post) => (
             <div key={post.slug.current} className="blog-container">
-              {loading ? (
-                <div>
-                  <Skeleton variant="rectangular" />
-                  <Skeleton />
-                </div>
-              ) : (
-                <div>
-                  <img src={post.mainImage.asset.url} alt={post.title} />
-                  <Link
-                    to={`/blogs/${post.slug.current}`}
-                    className="blog-link"
-                  >
-                    <h2>{post.title}</h2>
-                  </Link>
-                </div>
-              )}
+              <Link to={`/blogs/${post.slug.current}`} className="blog-link">
+                <h2>{post.title}</h2>
+              </Link>
             </div>
           ))}
         </div>

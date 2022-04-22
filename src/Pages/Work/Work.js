@@ -17,12 +17,15 @@ const Work = () => {
   };
 
   const [items, setItems] = useState(projectList);
+  const [toggleState, setToggleState] = useState(1);
 
-  const filterProject = (cateproject) => {
+  const filterProject = (cateproject, index) => {
     const updatedProjects = projectList.filter((currentProjects) => {
       return currentProjects.category === cateproject;
     });
     setItems(updatedProjects);
+    setToggleState(index);
+    console.log(index);
   };
   return (
     <>
@@ -39,9 +42,15 @@ const Work = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              transition={{ delay: 0.8, easeOut: [0, 0.25, 0.5, 1] }}
-              className="cat-btn"
-              onClick={() => setItems(projectList)}
+              transition={{
+                duration: 0.1,
+                delay: 0.8,
+                easeOut: [0, 0.25, 0.5, 1],
+              }}
+              className={
+                toggleState === 1 ? "cat-btn cat-btn-active" : "cat-btn"
+              }
+              onClick={() => setItems(projectList, 1)}
             >
               <span>All</span>
             </motion.button>
@@ -49,9 +58,15 @@ const Work = () => {
               variants={container1}
               initial="initial"
               animate="animate"
-              transition={{ delay: 0.9 }}
-              className="cat-btn"
-              onClick={() => filterProject("js")}
+              transition={{
+                duration: 0.1,
+                delay: 1,
+                easeOut: [0, 0.25, 0.5, 1],
+              }}
+              className={
+                toggleState === 2 ? "cat-btn cat-btn-active" : "cat-btn"
+              }
+              onClick={() => filterProject("js", 2)}
             >
               <span> Js</span>
             </motion.button>
@@ -59,9 +74,15 @@ const Work = () => {
               variants={container1}
               initial="initial"
               animate="animate"
-              transition={{ delay: 1 }}
-              className="cat-btn"
-              onClick={() => filterProject("css")}
+              transition={{
+                duration: 0.1,
+                delay: 1.2,
+                easeOut: [0, 0.25, 0.5, 1],
+              }}
+              className={
+                toggleState === 3 ? "cat-btn cat-btn-active" : "cat-btn"
+              }
+              onClick={() => filterProject("css", 3)}
             >
               <span>Css</span>
             </motion.button>

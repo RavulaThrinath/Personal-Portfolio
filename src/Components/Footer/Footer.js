@@ -46,28 +46,28 @@ export default Footer;
 
 export const Icons = () => {
   return (
-    <ul class="wrapper">
-      <li class="icon facebook">
+    <ul className="wrapper">
+      <li className="icon facebook">
         <span>
           <FaFacebookF />
         </span>
       </li>
-      <li class="icon twitter">
+      <li className="icon twitter">
         <span>
           <FaTwitter />
         </span>
       </li>
-      <li class="icon instagram">
+      <li className="icon instagram">
         <span>
           <RiInstagramFill />
         </span>
       </li>
-      <li class="icon github">
+      <li className="icon github">
         <span>
           <FaGithub />
         </span>
       </li>
-      <li class="icon youtube">
+      <li className="icon youtube">
         <span>
           <FaLinkedinIn />
         </span>
