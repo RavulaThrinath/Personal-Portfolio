@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import resume from "../../Assets/Thrinath Ravula (1).pdf";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   // const [arrow, setArrow] = useState(true);
@@ -16,47 +17,54 @@ const Home = () => {
   // };
   // window.addEventListener("scroll", arrowVisible);
   return (
-    <motion.section>
-      <div className="hometext">
-        <div className="intro">Hi there, I'm</div>
-        <div className="main-title">3 Nath</div>
+    <>
+      <Helmet>
+        <title>Thrinath Ravula</title>
+        <meta name="description" content="I am thrinath ravula" />
+        <link rel="canonical" href="/" />
+      </Helmet>
+      <motion.section>
+        <div className="hometext">
+          <div className="intro">Hi there, I'm</div>
+          <div className="main-title">3 Nath</div>
 
-        <div className="subtext">
-          <p className="subtext-1">Brings ideas to life with code</p>
-          <p className="subtext-2">
-            Web developer. UI/UX Designer. Content Creator.
-          </p>
-        </div>
-        <div className="btn-links">
-          <Link to="/contact" className="button-27">
-            Contact Me
-          </Link>
-          <a href={resume} download className="button-28">
-            Download CV
-          </a>
-        </div>
-      </div>
-      {/*<div className="social-icons">
-          <div className="social-icons-border">
-            <a href="./">
-              <RiFacebookFill />
-            </a>
-            <a href="./">
-              <RiInstagramFill />
-            </a>
-            <a href="./">
-              <RiTwitterFill />
+          <div className="subtext">
+            <p className="subtext-1">Brings ideas to life with code</p>
+            <p className="subtext-2">
+              Web developer. UI/UX Designer. Content Creator.
+            </p>
+          </div>
+          <div className="btn-links">
+            <Link to="/contact" className="button-27">
+              Contact Me
+            </Link>
+            <a href={resume} download className="button-28">
+              Download CV
             </a>
           </div>
-        </div>*/}
-      {/* <div className="box" style={{ display: arrow ? "inline" : "none" }}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>*/}
-      {/*  <About />
-      <Contact />*/}
-    </motion.section>
+        </div>
+        {/*<div className="social-icons">
+      <div className="social-icons-border">
+        <a href="./">
+          <RiFacebookFill />
+        </a>
+        <a href="./">
+          <RiInstagramFill />
+        </a>
+        <a href="./">
+          <RiTwitterFill />
+        </a>
+      </div>
+    </div>*/}
+        {/* <div className="box" style={{ display: arrow ? "inline" : "none" }}>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>*/}
+        {/*  <About />
+  <Contact />*/}
+      </motion.section>
+    </>
   );
 };
 

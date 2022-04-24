@@ -7,6 +7,8 @@ import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 // import AlertTitle from "@mui/material/AlertTitle";
 import { motion } from "framer-motion";
 import { formDetails } from "../../Data";
+import { Helmet } from "react-helmet-async";
+
 
 const Contact = () => {
   const form = useRef();
@@ -43,6 +45,11 @@ const Contact = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Contact - Thrinath Ravula</title>
+        <meta name="description" content="I am thrinath ravula" />
+        <link rel="canonical" href="/contact" />
+      </Helmet>
       <Faketitle fakeTitle="Contact" />
       <motion.section>
         <div className="container">
@@ -80,7 +87,7 @@ const Contact = () => {
                   animate="animate"
                   exit="exit"
                   variants={container}
-                  transition={{ delay: 0.3 }}
+                  transition={{ delay: 0.4 }}
                 >
                   <span className="details">Short brief</span>
                   <textarea

@@ -4,6 +4,7 @@ import { projectList } from "../../Data";
 import Heading from "../../Components/Utils/Heading/Heading";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const Work = () => {
   const container = {
@@ -29,6 +30,11 @@ const Work = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Work - Thrinath Ravula</title>
+        <meta name="description" content="I am thrinath ravula" />
+        <link rel="canonical" href="/work" />
+      </Helmet>
       <Faketitle fakeTitle="Work" />
       <div>
         <div className="work-list">

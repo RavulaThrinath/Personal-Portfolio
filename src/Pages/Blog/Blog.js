@@ -4,8 +4,10 @@ import client from "../../client";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 import Heading from "../../Components/Utils/Heading/Heading";
 import "./Blog.css";
+import { Helmet } from "react-helmet-async";
+
 // import ContentLoader from "react-content-loader";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -32,13 +34,13 @@ const Blog = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Blog - Thrinath Ravula</title>
+        <meta name="description" content="I am thrinath ravula" />
+        <link rel="canonical" href="/blog" />
+      </Helmet>
       <Faketitle fakeTitle="Blog" />
-      <motion.div
-        className="blog"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100, transition: { duration: 0.2 } }}
-      >
+      <div className="blog">
         <Heading
           headingTitle={`Blogs`}
           headingSubTitle={`A blog is almost like an online journal \n and suggests a regular focus.`}
@@ -52,7 +54,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

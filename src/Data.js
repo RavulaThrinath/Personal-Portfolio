@@ -95,7 +95,7 @@ export const formDetails = [
     type: "text",
     placeholder: "Enter your first name",
     name: "first_name",
-    time: .1,
+    time: .2,
   },
   {
     id: 1,
@@ -103,7 +103,7 @@ export const formDetails = [
     type: "text",
     placeholder: "Enter your last name",
     name: "last_name",
-    time: .15,
+    time: .25,
   },
   {
     id: 2,
@@ -111,7 +111,7 @@ export const formDetails = [
     type: "text",
     placeholder: "Enter your email",
     name: "email",
-    time: .2,
+    time: .3,
   },
   {
     id: 3,
@@ -119,6 +119,6 @@ export const formDetails = [
     type: "number",
     placeholder: "Enter your phone number",
     name: "number",
-    time: .25,
+    time: .35,
   },
 ];

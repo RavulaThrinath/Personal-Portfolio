@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Skill from "./Skills/Skill";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const container = {
@@ -13,6 +14,11 @@ const About = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>About - Thrinath Ravula</title>
+        <meta name="description" content="I am thrinath ravula" />
+        <link rel="canonical" href="/about" />
+      </Helmet>
       <Faketitle fakeTitle="About" />
       <section>
         <div className="about-container">

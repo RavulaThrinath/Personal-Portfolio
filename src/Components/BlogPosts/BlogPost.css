@@ -122,6 +122,20 @@ button {
   background-color: #7f78d2 !important;
 } */
 
+/* Skeleton */
+.MuiSkeleton-rectangular {
+  background-color: #23272c66 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 300px !important;
+  margin: 10px auto 30px auto !important;
+}
+.MuiSkeleton-root {
+  background-color: #23272c66 !important;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .blogpost {
     max-width: 60%;
