@@ -33,7 +33,7 @@ const Work = () => {
       <Helmet>
         <title>Work - Thrinath Ravula</title>
         <meta name="description" content="I am thrinath ravula" />
-        <link rel="canonical" href="/work" />
+        <link rel="canonical" href="/works" />
       </Helmet>
       <Faketitle fakeTitle="Work" />
       <div>

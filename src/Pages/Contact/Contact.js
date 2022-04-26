@@ -69,7 +69,7 @@ const Contact = () => {
                     exit="exit"
                     variants={container}
                     transition={{
-                      delay: `${details.time}`,
+                      delay: `${details.time}`
                     }}
                   >
                     <span className="details">{details.label}</span>
@@ -87,7 +87,7 @@ const Contact = () => {
                   animate="animate"
                   exit="exit"
                   variants={container}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.5 }}
                 >
                   <span className="details">Short brief</span>
                   <textarea
@@ -104,7 +104,7 @@ const Contact = () => {
                   animate="animate"
                   exit="exit"
                   variants={container1}
-                  transition={{ delay: .7, easeOut: [0, 0.25, 0.5, 1] }}
+                  transition={{ delay: .8, easeOut: [0, 0.25, 0.5, 1] }}
                 >
                   <span className="button_top" type="submit" value="send">
                     Send Message

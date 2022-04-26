@@ -15,17 +15,18 @@ import { BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
 import { MdOutlineContentCopy } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Snackbar from "@mui/material/Snackbar";
-import Skeleton from "@mui/material/Skeleton";
+import BlogSkeleton from "../../Skeleton/BlogSkeleton";
 
 const BlogPost1 = () => {
   const [singlePost, setSinglePost] = useState([]);
   const [open, setOpen] = React.useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
   const { slug } = useParams();
   useEffect(() => {
-    client
-      .fetch(
-        `*[slug.current == "${slug}"] {
+    setTimeout(async () => {
+      client
+        .fetch(
+          `*[slug.current == "${slug}"] {
         title,
         body,
         mainImage {
@@ -36,9 +37,10 @@ const BlogPost1 = () => {
           alt
         }
       }`
-      )
-      .then((data) => setSinglePost(data[0]));
-    setIsLoading(true);
+        )
+        .then((data) => setSinglePost(data[0]))
+        .catch(console.error);
+    }, 1000);
   }, [slug]);
   const navigate = useNavigate();
   const url = `https://www.3nath.me/blogs/${slug}`;
@@ -52,19 +54,18 @@ const BlogPost1 = () => {
   return (
     <div>
       <section className="blogpost">
-        <div className="main-img">
-          {singlePost.mainImage &&
-            singlePost.mainImage.asset &&
-            (isLoading ? (
+        {singlePost && (
+          <div className="main-img">
+            {singlePost.mainImage && singlePost.mainImage.asset && (
               <img
                 src={singlePost.mainImage.asset.url}
                 alt={singlePost.title}
                 title={singlePost.title}
               />
-            ) : (
-              <Skeleton variant="rectangular" width={210} height={118} />
-            ))}
-        </div>
+            )}
+          </div>
+        )}
+        <div>{!singlePost.mainImage && <BlogSkeleton />}</div>
         <div className="block__content">
           <BlockContent
             blocks={singlePost.body}
