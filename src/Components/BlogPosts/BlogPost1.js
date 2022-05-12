@@ -58,6 +58,7 @@ const BlogPost1 = () => {
           <div className="main-img">
             {singlePost.mainImage && singlePost.mainImage.asset && (
               <img
+                loading="lazy"
                 src={singlePost.mainImage.asset.url}
                 alt={singlePost.title}
                 title={singlePost.title}

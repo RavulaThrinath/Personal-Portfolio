@@ -26,7 +26,7 @@ const Home = () => {
       <motion.section>
         <div className="hometext">
           <div className="intro">Hi there, I'm</div>
-          <div className="main-title">3 Nath</div>
+          <div className="main-title ">3 Nath</div>
 
           <div className="subtext">
             <p className="subtext-1">Brings ideas to life with code</p>
