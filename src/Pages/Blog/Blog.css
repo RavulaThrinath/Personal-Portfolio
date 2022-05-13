@@ -17,11 +17,10 @@
 }
 .blog-container h2 {
   font-size: 20px;
-  line-height: 35px;
+  line-height: 25px;
   margin: 20px;
   /* font-family: "Manrope", serif; */
   font-weight: normal;
-  color: #ffffff;
 }
 .blog-container {
   position: relative;
@@ -51,10 +50,12 @@
   }
   .blog-container h2 {
     font-size: 30px;
+    line-height: 35px;
     margin: 20px;
     font-family: "Commissioner", serif;
     font-weight: 400;
     color: var(--second-color);
+    opacity: 0.8;
   }
   .blog-container {
     z-index: 90000;
