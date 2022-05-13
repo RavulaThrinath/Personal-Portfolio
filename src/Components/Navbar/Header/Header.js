@@ -10,17 +10,17 @@ import { motion } from "framer-motion";
 import ResponsiveNav from "../ResponsiveNav/ResponsiveNav";
 
 const Header = () => {
-  const audioClick = () => {
-    var sound = document.getElementById("link");
-    sound.play();
-  };
+  // const audioClick = () => {
+  //   var sound = document.getElementById("link");
+  //   sound.play();
+  // };
   return (
     <>
-      <audio
+      {/* <audio
         id="link"
         src="http://ivang-design.com/svg-load/menu/link.mp3"
         preload="auto"
-      ></audio>
+      ></audio> */}
       <Navbar className="navbar">
         <motion.div
           className="navbar-content"
@@ -28,12 +28,12 @@ const Header = () => {
           animate={{ x: 0 }}
         >
           <div className="navbar-links">
-            <NavLink onClick={audioClick} className="links" to="/">
+            <NavLink  className="links" to="/">
               <AiFillHome />
             </NavLink>
 
             <NavLink
-              onClick={audioClick}
+              // onClick={audioClick}
               className={({ isActive }) => (isActive ? "active" : "links")}
               to="/about"
             >
@@ -41,7 +41,7 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-              onClick={audioClick}
+              // onClick={audioClick}
               className={({ isActive }) => (isActive ? "active" : "links")}
               to="/works"
             >
@@ -49,7 +49,7 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-              onClick={audioClick}
+              // onClick={audioClick}
               className={({ isActive }) => (isActive ? "active" : "links")}
               to="/blogs"
             >
@@ -57,7 +57,7 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-              onClick={audioClick}
+              // onClick={audioClick}
               className={({ isActive }) => (isActive ? "active" : "links")}
               to="/contact"
             >
