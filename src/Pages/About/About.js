@@ -8,9 +8,14 @@ import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const container = {
-    initial: { opacity: 0, y: 100 },
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: 100 },
+  };
+  const container2 = {
+    initial: { opacity: 0, y: -100 },
     animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -100 },
+    exit: { opacity: 0, y: "100vw" },
   };
   return (
     <>
@@ -27,8 +32,8 @@ const About = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              transition={{ type: "spring" }}
-              variants={container}
+              transition={{ duration: 0.4 }}
+              variants={container2}
             >
               i'm <span>Thrinath Ravula</span> And i'm a <br />
               <span> web developer</span> and <span>designer.</span>
@@ -37,7 +42,7 @@ const About = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              transition={{ type: "spring", delay: 0.1 }}
+              transition={{ delay: 0.5, duration: 0.4 }}
               variants={container}
               className="about-sub-text"
             >
@@ -50,7 +55,7 @@ const About = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              transition={{ type: "spring", delay: 0.2 }}
+              transition={{ delay: 0.6, duration: 0.4 }}
               variants={container}
               className="about-sub-text"
             >
@@ -83,7 +88,7 @@ export const MoreButton = ({ btntext }) => {
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ type: "spring", delay: 0.3 }}
+      transition={{ type: "spring", delay: 1 }}
       variants={container}
     >
       <Link className="cta" to="/contact">

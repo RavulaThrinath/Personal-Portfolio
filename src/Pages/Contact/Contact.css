@@ -84,6 +84,7 @@ textarea {
   border: none;
   border-radius: var(--button_radius);
   background: var(--button_outline_color);
+  z-index: 0;
 }
 
 .button_top {

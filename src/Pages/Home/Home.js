@@ -43,19 +43,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-        {/*<div className="social-icons">
-      <div className="social-icons-border">
-        <a href="./">
-          <RiFacebookFill />
-        </a>
-        <a href="./">
-          <RiInstagramFill />
-        </a>
-        <a href="./">
-          <RiTwitterFill />
-        </a>
-      </div>
-    </div>*/}
+        {/* <Glasscard /> */}
+
         {/* <div className="box" style={{ display: arrow ? "inline" : "none" }}>
       <span></span>
       <span></span>

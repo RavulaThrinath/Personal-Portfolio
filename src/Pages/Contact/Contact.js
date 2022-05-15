@@ -3,12 +3,9 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Heading from "../../Components/Utils/Heading/Heading";
 import Faketitle from "../../Components/Utils/Faketitle/Faketitle";
-// import Alert from "@mui/material/Alert";
-// import AlertTitle from "@mui/material/AlertTitle";
 import { motion } from "framer-motion";
 import { formDetails } from "../../Data";
 import { Helmet } from "react-helmet-async";
-
 
 const Contact = () => {
   const form = useRef();
@@ -24,11 +21,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
-          alert(result.text);
+          alert(
+            "Thanks for your message, I will get back to you as soon as possible"
+          );
+          e.target.reset();
         },
         (error) => {
-          // console.log(error.text);
           alert(error.text);
         }
       );
@@ -45,7 +43,7 @@ const Contact = () => {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Contact - Thrinath Ravula</title>
         <meta name="description" content="I am thrinath ravula" />
         <link rel="canonical" href="/contact" />
@@ -69,7 +67,7 @@ const Contact = () => {
                     exit="exit"
                     variants={container}
                     transition={{
-                      delay: `${details.time}`
+                      delay: `${details.time}`,
                     }}
                   >
                     <span className="details">{details.label}</span>
@@ -104,7 +102,7 @@ const Contact = () => {
                   animate="animate"
                   exit="exit"
                   variants={container1}
-                  transition={{ delay: .8, easeOut: [0, 0.25, 0.5, 1] }}
+                  transition={{ delay: 0.8, easeOut: [0, 0.25, 0.5, 1] }}
                 >
                   <span className="button_top" type="submit" value="send">
                     Send Message
