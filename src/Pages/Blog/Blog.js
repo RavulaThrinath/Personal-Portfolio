@@ -6,8 +6,8 @@ import Heading from "../../Components/Utils/Heading/Heading";
 import "./Blog.css";
 import { Helmet } from "react-helmet-async";
 import SkeletonArticle from "../../Skeleton/SkeletonArticle";
-// import ContentLoader from "react-content-loader";
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 
 const Blog = () => {
   const [posts, setPosts] = useState(null);
@@ -65,16 +65,31 @@ const Blog = () => {
             }}
           >
             {posts.map((post) => (
-              <div key={post.slug.current} className="blog-container">
-                <Link to={`/blogs/${post.slug.current}`} className="blog-link">
+              <Tilt
+                key={post.slug.current}
+                tiltReverse={true}
+                perspective="1000"
+                tiltMaxAngleX="7"
+                tiltMaxAngleY="7"
+                className="blog-container"
+              >
+                <img
+                  src={post.mainImage.asset.url}
+                  alt={post.title}
+                  title={post.title}
+                />
+                <Link
+                  to={`/blogs/${post.slug.current}`}
+                  className="blog-link Tilt-inner"
+                >
                   <h2>{post.title}</h2>
                 </Link>
-              </div>
+              </Tilt>
             ))}
           </motion.div>
         )}
         <div className="blog-wrapper">
-          {!posts && [1, 2, 3, 4, 5, 6].map((n) => <SkeletonArticle key={n} />)}
+          {!posts && [1, 2, 3].map((n) => <SkeletonArticle key={n} />)}
         </div>
       </div>
     </>

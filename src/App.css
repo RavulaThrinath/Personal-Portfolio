@@ -46,16 +46,13 @@
   --third-color: #99a2ac;
   --background-color: #0d1117;
 }
-/* html,
-body, * {
-  cursor: none;
-} */
+
 
 body {
   width: 100%;
   height: auto;
   background-color: var(--background-color);
-  /* user-select: none; */
+  user-select: none;
 }
 a {
   text-decoration: none;

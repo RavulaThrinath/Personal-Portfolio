@@ -5,17 +5,8 @@ import resume from "../../Assets/Thrinath Ravula (1).pdf";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
+
 const Home = () => {
-  // const [arrow, setArrow] = useState(true);
-  // const arrowVisible = () => {
-  //   const scrolled = document.documentElement.scrollTop;
-  //   if (scrolled > 50) {
-  //     setArrow(false);
-  //   } else if (scrolled <= 500) {
-  //     setArrow(true);
-  //   }
-  // };
-  // window.addEventListener("scroll", arrowVisible);
   return (
     <>
       <Helmet>
@@ -42,14 +33,9 @@ const Home = () => {
               Download CV
             </a>
           </div>
+          
         </div>
-        {/* <Glasscard /> */}
 
-        {/* <div className="box" style={{ display: arrow ? "inline" : "none" }}>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>*/}
         {/*  <About />
   <Contact />*/}
       </motion.section>

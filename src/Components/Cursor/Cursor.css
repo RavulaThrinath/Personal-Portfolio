@@ -31,3 +31,9 @@
   height: var(--cursor-outline-size);
   background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
 }
+
+@media screen and (max-width: 768px) {
+  .main-c {
+    display: none;
+  }
+}
