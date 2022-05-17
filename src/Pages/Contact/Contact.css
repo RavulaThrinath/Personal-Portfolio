@@ -17,7 +17,6 @@
 form .user-details .input-box {
   margin-bottom: 19px;
   width: 100%;
-  /* width: calc(100% / 2 - 20px); */
 }
 .textarea-box {
   width: 100%;
@@ -77,6 +76,7 @@ textarea {
   --button_radius: 12px;
   --button_color: #7f78d2;
   --button_outline_color: #585297;
+  width: max-content;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -85,6 +85,7 @@ textarea {
   border-radius: var(--button_radius);
   background: var(--button_outline_color);
   z-index: 0;
+
 }
 
 .button_top {

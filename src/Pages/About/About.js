@@ -47,7 +47,7 @@ const About = () => {
               className="about-sub-text"
             >
               I Specialize in refined web experiences with a focus on animated,
-              responsive, and interactive content. Delivering highly executed
+              responsive, & interactive content. Delivering highly executed
               front-end user experiences by paying close attention to the
               nuances of design, optimization, and performance.
             </motion.h4>
