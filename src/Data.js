@@ -1,3 +1,14 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGithub,
+  FaFigma,
+  FaNode,
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiSolidity } from "react-icons/si";
+
 export const hServicesList = [
   {
     id: 0,
@@ -120,5 +131,48 @@ export const formDetails = [
     placeholder: "Enter your phone number",
     name: "number",
     time: 0.45,
+  },
+];
+
+export const iconTags = [
+  {
+    id: 1,
+    icon: <FaHtml5 />,
+    tagName: "HTML",
+  },
+  {
+    id: 2,
+    icon: <FaCss3Alt />,
+    tagName: "CSS",
+  },
+  {
+    id: 3,
+    icon: <IoLogoJavascript />,
+    tagName: "JavaScript",
+  },
+  {
+    id: 4,
+    icon: <FaReact />,
+    tagName: "React Js",
+  },
+  {
+    id: 5,
+    icon: <FaNode />,
+    tagName: "Node Js",
+  },
+  {
+    id: 6,
+    icon: <SiSolidity />,
+    tagName: "Solidity",
+  },
+  {
+    id: 7,
+    icon: <FaGithub />,
+    tagName: "Github",
+  },
+  {
+    id: 8,
+    icon: <FaFigma />,
+    tagName: "Figma",
   },
 ];

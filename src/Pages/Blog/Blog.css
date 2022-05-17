@@ -33,6 +33,11 @@
   height: auto;
   border-radius: 10px 10px 0 0;
 }
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
 
 @media only screen and (min-width: 768px) {
   .blog {
