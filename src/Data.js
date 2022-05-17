@@ -45,7 +45,7 @@ export const projectList = [
     category: "js",
     delay: 0.3,
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+      "A consultancy firm aims to provide opportunities for the fresh college graduates and industry experienced living in the USA.",
   },
   {
     id: 1,
@@ -55,17 +55,17 @@ export const projectList = [
     projectName: "NSP Stacks",
     category: "css",
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+      "Compiled data and facts from all the seasons of Top Chef, plus spinoffs Top Chef Masters, Just Desserts, and Duels.",
   },
   {
     id: 2,
     siteURL: "https://www.spontstore.com/",
     urlTitle: "View Site",
     delay: 0.5,
-    projectName: "Spont Store",
+    projectName: "Melody Mocktail",
     category: "css",
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+      "An ongoing entertainment, information, and career guidance Project. MM is Telugu NRI channel based out of USA.",
   },
   {
     id: 3,
@@ -73,9 +73,9 @@ export const projectList = [
     urlTitle: "View Code",
     delay: 0.6,
     projectName: "Neumorphism Clock",
-    category: "css",
+    category: "js",
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+      "Building a digital clock using JavaScript can be an excellent project for a beginner to understand the basic concepts of JS.",
   },
   {
     id: 4,
@@ -85,7 +85,7 @@ export const projectList = [
     projectName: "Tic Toc Toe",
     category: "js",
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+      "Tic-Tac-Toe is a simple example of games you can program in JavaScript, CSS and HTML.",
   },
   {
     id: 5,
@@ -95,7 +95,7 @@ export const projectList = [
     projectName: "Hangman Game",
     category: "js",
     projectDes:
-      "Combining my love of coding with my love for reading, BookWorm aims to make reading materials.",
+      "Hangman Game is a simple example of games you can program in JavaScript, CSS and HTML.",
   },
 ];
 

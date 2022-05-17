@@ -19,9 +19,9 @@
 }
 .blog-container h2 {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   padding: 10px;
-  margin: 0;
+  margin: 5px 0 10px 0;
   font-family: "Commissioner", serif;
   font-weight: 500;
   color: var(--second-color);
