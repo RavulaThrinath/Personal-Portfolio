@@ -60,7 +60,6 @@
     opacity: 0.8;
   }
   .blog-container {
-    /* z-index: 90000; */
     position: relative;
     width: 100%;
     height: auto;

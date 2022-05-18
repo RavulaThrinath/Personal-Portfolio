@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ResponsiveNav.css";
+import "./ResponsiveNav.scss";
 
 const ResponsiveNav = () => {
   const btnClick = () => {
@@ -8,44 +8,47 @@ const ResponsiveNav = () => {
     inputCheck.checked = !inputCheck.checked;
   };
   return (
-    <div>
+    <>
       <input
-        className="menu-icon"
         type="checkbox"
-        id="menu-icon"
-        name="menu-icon"
+        id="main-navigation-toggle"
+        className="btn btn--close"
+        title="Toggle main navigation"
       />
-      <label htmlFor="menu-icon"></label>
-      <nav className="nav">
-        <ul className="pt-5">
-          <li>
-            <Link onClick={btnClick} to="./">
+      <label htmlFor="main-navigation-toggle">
+        <span></span>
+      </label>
+
+      <nav id="main-navigation" className="nav-main">
+        <ul className="menu">
+          <li className="menu__item">
+            <Link to="./" className="menu__link" onClick={btnClick}>
               Home
             </Link>
           </li>
-          <li>
-            <Link onClick={btnClick} to="./about">
+          <li className="menu__item">
+            <Link to="./about" className="menu__link" onClick={btnClick}>
               About
             </Link>
           </li>
-          <li>
-            <Link onClick={btnClick} to="./works">
+          <li className="menu__item">
+            <Link to="./works" className="menu__link" onClick={btnClick}>
               Work
             </Link>
           </li>
-          <li>
-            <Link onClick={btnClick} to="./blogs">
-              Blog
+          <li className="menu__item">
+            <Link to="./blogs" className="menu__link" onClick={btnClick}>
+              Blogs
             </Link>
           </li>
-          <li>
-            <Link onClick={btnClick} to="./contact">
+          <li className="menu__item">
+            <Link to="./contact" className="menu__link" onClick={btnClick}>
               Contact
             </Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 };
 

@@ -17,8 +17,6 @@ import { AnimatePresence } from "framer-motion";
 import "animate.css";
 
 function App() {
-  // const [load, upadateLoad] = useState(true);
-
   return (
     <Router>
       <div className="app">

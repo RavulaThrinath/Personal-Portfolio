@@ -5,7 +5,7 @@ const SkeletonArticle = () => {
   return (
     <div className="skeleton-blog">
       <div>
-        <SkeletonElement type="imagee" />
+        <SkeletonElement type="imagee" />p
         <SkeletonElement type="text" />
         <SkeletonElement type="text" />
         <SkeletonElement type="text" />

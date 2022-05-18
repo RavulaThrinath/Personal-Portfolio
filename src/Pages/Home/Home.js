@@ -5,7 +5,6 @@ import resume from "../../Assets/Thrinath Ravula (1).pdf";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
-
 const Home = () => {
   return (
     <>
@@ -33,7 +32,6 @@ const Home = () => {
               Download CV
             </a>
           </div>
-          
         </div>
 
         {/*  <About />
