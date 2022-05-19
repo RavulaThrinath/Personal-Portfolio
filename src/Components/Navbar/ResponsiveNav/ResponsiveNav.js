@@ -4,7 +4,7 @@ import "./ResponsiveNav.scss";
 
 const ResponsiveNav = () => {
   const btnClick = () => {
-    const inputCheck = document.getElementById("menu-icon");
+    const inputCheck = document.getElementById("main-navigation-toggle");
     inputCheck.checked = !inputCheck.checked;
   };
   return (
@@ -22,27 +22,27 @@ const ResponsiveNav = () => {
       <nav id="main-navigation" className="nav-main">
         <ul className="menu">
           <li className="menu__item">
-            <Link to="./" className="menu__link" onClick={btnClick}>
+            <Link to="/" className="menu__link" onClick={btnClick}>
               Home
             </Link>
           </li>
           <li className="menu__item">
-            <Link to="./about" className="menu__link" onClick={btnClick}>
+            <Link to="/about" className="menu__link" onClick={btnClick}>
               About
             </Link>
           </li>
           <li className="menu__item">
-            <Link to="./works" className="menu__link" onClick={btnClick}>
+            <Link to="/works" className="menu__link" onClick={btnClick}>
               Work
             </Link>
           </li>
           <li className="menu__item">
-            <Link to="./blogs" className="menu__link" onClick={btnClick}>
+            <Link to="/blogs" className="menu__link" onClick={btnClick}>
               Blogs
             </Link>
           </li>
           <li className="menu__item">
-            <Link to="./contact" className="menu__link" onClick={btnClick}>
+            <Link to="/contact" className="menu__link" onClick={btnClick}>
               Contact
             </Link>
           </li>
