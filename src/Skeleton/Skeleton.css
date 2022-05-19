@@ -37,7 +37,7 @@
   border-radius: 10px;
 }
 .skeleton-blog {
-  margin: 20px 50px 100px 0;
+  margin: 0 50px 100px 0;
 }
 
 @media screen and (max-width: 768px) {

@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiSolidity } from "react-icons/si";
+import { BsFillEyeFill } from "react-icons/bs";
 
 export const hServicesList = [
   {
@@ -40,7 +41,9 @@ export const projectList = [
   {
     id: 0,
     siteURL: "https://www.techlabit.com/",
-    urlTitle: "Visit Site",
+    gitURL: "https://github.com/RavulaThrinath/Consultancy-Campany.git",
+    icon1: <BsFillEyeFill />,
+    icon2: <FaGithub />,
     projectName: "Techlab IT",
     category: "js",
     delay: 0.3,
@@ -50,7 +53,9 @@ export const projectList = [
   {
     id: 1,
     siteURL: "https://www.nspstackssolutions.com/",
-    urlTitle: "Visit Site",
+    gitURL: "https://github.com/RavulaThrinath/my-aap.git",
+    icon1: <BsFillEyeFill />,
+    icon2: <FaGithub />,
     delay: 0.4,
     projectName: "NSP Stacks",
     category: "css",
@@ -59,8 +64,10 @@ export const projectList = [
   },
   {
     id: 2,
-    siteURL: "https://www.spontstore.com/",
-    urlTitle: "View Site",
+    siteURL: "",
+    gitURL: "",
+    icon1: <BsFillEyeFill />,
+    icon2: <FaGithub />,
     delay: 0.5,
     projectName: "Melody Mocktail",
     category: "css",
@@ -69,8 +76,10 @@ export const projectList = [
   },
   {
     id: 3,
-    siteURL: "https://github.com/RavulaThrinath/clock.git",
-    urlTitle: "View Code",
+    siteURL: "https://myy-analog-clock.vercel.app/",
+    gitURL: "https://github.com/RavulaThrinath/clock.git",
+    icon1: <BsFillEyeFill />,
+    icon2: <FaGithub />,
     delay: 0.6,
     projectName: "Neumorphism Clock",
     category: "js",
@@ -79,8 +88,10 @@ export const projectList = [
   },
   {
     id: 4,
-    siteURL: "https://github.com/RavulaThrinath/Tic-Tac-Toe.git",
-    urlTitle: "View Code",
+    siteURL: "https://the-tic-tac-toe.vercel.app/",
+    gitURL: "https://github.com/RavulaThrinath/Tic-Tac-Toe.git",
+    icon1: <BsFillEyeFill />,
+    icon2: <FaGithub />,
     delay: 0.7,
     projectName: "Tic Toc Toe",
     category: "js",
@@ -89,7 +100,10 @@ export const projectList = [
   },
   {
     id: 5,
-    siteURL: "https://github.com/RavulaThrinath/Hangman-game.git",
+    siteURL: "https://my-hangman-game.vercel.app/",
+    gitURL: "https://github.com/RavulaThrinath/Hangman-game.git",
+    icon1: <BsFillEyeFill />,
+    icon2: <FaGithub />,
     urlTitle: "View Code",
     delay: 0.8,
     projectName: "Hangman Game",

@@ -110,29 +110,24 @@ const Work = () => {
               >
                 <h1>{project.projectName}</h1>
                 <p>{project.projectDes}</p>
-                <a
-                  className="site-link"
-                  href={project.siteURL}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>{project.urlTitle}</span>
-                  <svg
-                    id="arrow-horizontal"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="10"
-                    viewBox="0 0 46 16"
+                <div className="source-links">
+                  <a
+                    className="site-link"
+                    href={project.siteURL}
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <path
-                      id="Path_10"
-                      data-name="Path 10"
-                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                      transform="translate(30)"
-                      fill="#8b949e"
-                    ></path>
-                  </svg>
-                </a>
+                    {project.icon1}
+                  </a>
+                  <a
+                    className="site-link"
+                    href={project.gitURL}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {project.icon2}
+                  </a>
+                </div>
               </motion.div>
             ))}
           </div>

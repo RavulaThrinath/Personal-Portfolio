@@ -11,11 +11,7 @@ import Tilt from "react-parallax-tilt";
 
 const Blog = () => {
   const [posts, setPosts] = useState(null);
-  const container = {
-    initial: { opacity: 0, scale: 0 },
-    animate: { opacity: 1, scale: 1 },
-    exit: { opacity: 0, scale: 0 },
-  };
+
   useEffect(() => {
     setTimeout(async () => {
       client
@@ -52,18 +48,7 @@ const Blog = () => {
           headingSubTitle={`A blog is almost like an online journal \n and suggests a regular focus.`}
         />
         {posts && (
-          <motion.div
-            className="blog-list"
-            variants={container}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={{
-              duration: 0.3,
-              delay: 0,
-              easeOut: [0, 0.25, 0.5, 1],
-            }}
-          >
+          <motion.div className="blog-list">
             {posts.map((post) => (
               <Tilt
                 key={post.slug.current}
