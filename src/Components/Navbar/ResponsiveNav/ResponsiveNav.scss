@@ -75,11 +75,12 @@
 
     span {
       display: block;
-      height: 2rem;
+      height: 2.5rem;
       position: relative;
       transition: transform calc(var(--td) * 3) var(--te);
       width: 2.5rem;
       background-color: #161b22;
+      border-radius: 100px;
 
       &::before {
         transform: rotate(0) translateY(-45%);
