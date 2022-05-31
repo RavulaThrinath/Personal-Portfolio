@@ -21,7 +21,10 @@ const About = () => {
     <>
       <Helmet>
         <title>About - Thrinath Ravula</title>
-        <meta name="description" content="I am thrinath ravula" />
+        <meta
+      name="description"
+      content="Thrinath Ravula is a front-end developer who spends time building useful products. He Specialize in refined web experiences with a focus on animated, responsive, & interactive content. He is a designer, developer and content creator."
+    />
         <link rel="canonical" href="/about" />
       </Helmet>
       <Faketitle fakeTitle="About" />

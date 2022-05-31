@@ -67,8 +67,9 @@
 }
 
 .blog_text img {
-  display: block;
   width: 100%;
+  display: block;
+  margin-bottom: 25px;
 }
 
 /* From uiverse.io by @Jedi-hongbin */
